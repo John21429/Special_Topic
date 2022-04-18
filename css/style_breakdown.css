@@ -1,0 +1,93 @@
+@import url(./reset.css);
+body{
+    background-image: url(../img/bgi/style_bgi/Blue\ Marble\ 4.png);
+}
+.wrapper{
+    width: 1440px;
+    font-size: 20px;
+}
+section>a{
+    display: block;
+    margin: 20px;
+}
+/* b1 */
+.banner1{
+    width: 800px;
+    margin: 20px auto;
+    text-align: center;
+    /* border: 1px solid red; */
+}
+.banner1 h3{
+    margin: 20px;
+}
+
+/* b2 */
+.banner2{
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+}
+.b201{
+    margin-right: 50px;
+}
+.b201 p{
+    margin-bottom: 20px; 
+    text-align: center;
+}
+.b202{
+    writing-mode: vertical-lr;
+}
+.b202 p{
+    margin-right: 20px;
+    text-align: center;
+}
+
+/* b3 */
+.banner3{
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    
+}
+.b302{
+    margin-left: 50px;
+}
+.b202 p{
+    margin-bottom: 20px; 
+    text-align: center;
+}
+.b301{
+    writing-mode: vertical-lr;
+}
+.b301 p{
+    margin-right: 20px;
+    text-align: center;
+}
+.b302{
+    margin-top: 20px;
+    margin-left: 80px;
+}
+.b302 p{
+    margin-bottom: 10px; 
+    text-align: center;
+}
+/* b4 */
+.banner4{
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+}
+.b401{
+    margin-right: 50px;
+}
+.b401 p{
+    margin-bottom: 20px; 
+    text-align: center;
+}
+.b402{
+    writing-mode: vertical-lr;
+}
+.b402 p{
+    margin-right: 20px;
+    text-align: center;
+}

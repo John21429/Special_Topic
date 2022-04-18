@@ -1,0 +1,119 @@
+@import url(./reset.css);
+
+body{
+    background-image: url(../img/bgi/sign_up/sign_up_bgi.png);
+}
+input{
+    border: 0;
+    border-bottom: 1px solid gray;
+    /* height: 30px;
+    line-height: 1.6; */
+}
+/* .wrapper{
+    display: flex;
+} */
+
+header h1{
+    padding: 60px 0;
+}
+.back_sign_in{
+    display: flex;
+    margin: 10px 50px;
+}
+.back_sign_in a{
+    color: blue;
+}
+.u_p{
+    display: flex;
+    justify-content: center;
+    height: 180px;
+    /* margin-left: 100px; */
+}
+.u_p h3{
+    margin-right: 20px;
+}
+.u_p_l{
+    /* height: 120px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    padding-top: 20px;
+    font-size: 18px;
+}
+.u_p_l span{
+    height: 2px;
+    background-color:black;
+    border: 1px solid black;
+    width: 600px;
+}
+.u_p_l input{
+    width: 250px;
+}
+.username{
+    margin-top: 10px;
+    display: flex;
+}
+.password{
+    margin-top: 20px;
+    display: flex;
+}
+.confirm_password{
+    margin-top: 20px;
+    display: flex;
+    width: 400px;
+}
+.member_information{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    height: 300px;
+}
+.member_information h3{
+    margin-right: 20px;
+}
+.m_i_l{
+    /* height: 120px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    padding-top: 20px;
+    font-size: 18px;
+}
+.m_i_l span{
+    height: 1px;
+    background-color:black;
+    border: 1px solid black;
+    width: 600px;
+}
+.membername{
+    display: flex;
+    /* margin-top: 10px; */
+}
+.birth_date{
+    display: flex;
+    /* margin-top: 10px; */
+}
+.phone_number{
+    display: flex;
+}
+.email{
+    display: flex;
+}
+.address{
+    display: flex;
+}
+input[type=submit]{
+    width: 200px;
+    border: 0;
+    margin-bottom: 20px;
+    font-size: 20px;
+    margin-left: 140px;
+    /* border-radius: 5%; */
+    background-color: rgba(182,182,182,1);
+}
+input[type=submit]:hover{
+    background-color: black;
+    color: #f5f5f7;
+}

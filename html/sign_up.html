@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign_up</title>
+    <link rel="stylesheet" href="../css/sign_up.css">
+    <link rel="stylesheet" href="../css/all_2.css">
+    <script src="https://kit.fontawesome.com/fc393adae9.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- 頁首 -->
+        <header>
+            <div class="header">
+                <!-- LOGO -->
+                <img class="logo" src="../img/LOGO_F2_B.png" alt="">
+                <h1>會員註冊</h1>
+                <!-- 總選單列 -->
+                <nav>
+                    <ul>
+                        <!-- 選單列 -->
+                        <li class="all_list">
+                            <a href=""><i class="fa-solid fa-bars"></i></a>
+                            <ul>
+                                <li><a href="">關於我們</a></li>
+                                <li><a href="">最新消息</a></li>
+                                <!-- 商品類別選單 -->
+                                <li class=" products">
+                                    <a href="">商品類別</a>
+                                    <ul>
+                                        <li><a href="">日式餐具組</a></li>
+                                        <li><a href="">禮盒組</a></li>
+                                        <li><a href="">盤子</a></li>
+                                        <li><a href="">碗</a></li>
+                                        <li><a href="">杯子</a></li>
+                                        <li><a href="">其他配件</a></li>
+                                    </ul>
+                                </li>
+                                <!-- 擺盤風格選單 -->
+                                <li class="table_style">
+                                    <a href="">餐桌風格</a>
+                                    <ul>
+                                        <li><a href="">夏日小清新</a></li>
+                                        <li><a href="">初夏青白瓷</a></li>
+                                        <li><a href="">波光綠竹</a></li>
+                                        <li><a href="">初春粉彩</a></li>
+                                        <li><a href="">梅花之歌</a></li>
+                                        <li><a href="">水墨懷石</a></li>
+                                        <li><a href="">更多風格</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- 購物車列 -->
+                        <li>
+                            <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                            <a href=""></a>
+                        </li>
+                        <!-- 會員列 -->
+                        <li class="user">
+                            <a href=""><i class="fa-solid fa-image-portrait"></i></a>
+                            <ul>
+                                <li><a href="">會員登入</a></li>
+                                <li><a href="">會員註冊</a></li>
+                                <li><a href="">訂單查詢</a></li>
+                                <li><a href="">購物說明</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- 頁首結束 -->
+        <article>
+            <section>
+                <div class="back_sign_in">
+                    <p>已是會員？</p>
+                    <a href="../html/sign_in.html">請登入</a>
+                </div>
+                <div class="u_p">
+                    <h3>帳號密碼</h3>
+                    <div class="u_p_l">
+                        <span></span>
+                        <div class="username">
+                            <p>帳號：</p> 
+                            <input type="text" placeholder="6個以上的英文或數字" name="username" id="">
+                        </div>
+                        <div class="password">
+                            <p>密碼：</p> 
+                            <input type="text" placeholder="8個以上的英文或數字"name="password" id="">
+                        </div>
+                        <div class="confirm_password">
+                            <p>確認密碼：</p> 
+                            <input type="text" placeholder="請再次輸入您設定的密碼"name="confirm_password" id="">
+                        </div>
+                    </div>
+                </div>
+                <div class="member_information">
+                    <h3>會員資料</h3>
+                    <div class="m_i_l">
+                        <span></span>
+                        <div class="membername">
+                            <p>姓名：</p> 
+                            <input type="text" placeholder="您的本名" name="username" id="">
+                        </div>
+                        <div class="birth_date">
+                            <p>生日(西元)：</p> 
+                            <input type="date" name="birth_date" id="">
+                        </div>
+                        <div class="phone_number">
+                            <p>手機號碼：</p> 
+                            <input type="tel" name="phone_number" placeholder="09xx-xxx-xxx" minlength="10" maxlength="10"id="">
+                        </div>
+                        <div class="email">
+                            <p>電子郵件：</p> 
+                            <input type="email"placeholder="exsample@email.com" name="email" id="">
+                        </div>
+                        <div class="address">
+                            <p>通訊地址：</p>
+                            <select name="" id="">
+                                <option value="Taipei">台北市</option>
+                                <option value="Taipei">新北市</option>
+                            </select>
+                            <select name="" id="">
+                                <option value="">中正區</option>
+                                <option value="">板橋區</option>
+                            </select>
+                            <input type="text" placeholder="街/路,段/巷,弄,號,樓" name="address" id="">
+                        </div>
+                        <input type="submit" value="送出">  
+                        <!-- <div id="twzipcode" class="form-row">
+                            <div class="form-group col">
+                                <div data-role="county" data-style="form-control" data-name="county" data-value=""></div>
+                            </div>
+                            <div class="form-group col">
+                                <div data-role="district" data-style="form-control" data-name="district" data-value=""></div>
+                            </div>
+                            <div class="form-group col">
+                                <div data-role="zipcode" data-style="form-control" data-name="zipcode" data-value=""></div>
+                            </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="inputAddress2" placeholder="居住地址">
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+         <!-- 頁尾 -->
+         <footer>
+            <div class="footer_box">
+                <div class="footer">
+                    <div class="footer_l1">
+                        <nav>
+                            <ul>
+                                <li><a href="">關於我們</a></li>
+                                <li><a href="">購物說明</a></li>
+                                <li><a href="">聯絡我們</a></li>
+                            </ul>
+                        </nav>    
+                    </div>
+                    <div class="footer_l2">
+                        <a href=""><img src="../img/LOGO_F2_B.png" alt=""></a>
+                            <p>本網站為緯育TibaMe前端設計工程師班第76期學員專題作品，本平台僅供學習、展示之用。參考資源:</p>
+                            <a href="https://www.tableandstyle.com/">東京食器、</a>
+                            <!-- <p>，</p> -->
+                            <a href="https://shop.waga-waga.com/">waga。</a>
+                            <!-- <p>。</p> -->
+                    </div>
+                    <div class="footer_l3">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <i class="fa-brands fa-facebook-square"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fa-brands fa-instagram-square"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fa-brands fa-line"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- <a class="top_icon"href="">
+                            <i class="fa-solid fa-arrow-up-to-line"></i> -->
+                        </a>  
+                    </div>
+                </div>
+            </div>
+        </footer>    
+    </div>
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-twzipcode@1.7.14/jquery.twzipcode.min.js"></script>
+    <script>$("#twzipcode").twzipcode({
+    });</script> -->
+</body>
+</html>

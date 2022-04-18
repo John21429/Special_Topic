@@ -1,0 +1,205 @@
+@import url(./reset.css);
+body{
+    background-image: url(../img/bgi/);
+}
+.header h2{
+    margin: 60px;
+}
+.shopping_list{
+    margin-top: 20px;
+}
+.shopping_list ul{
+    display: flex;
+    background-color:rgba(182,182,182,1) ;
+    justify-content: space-between;
+    align-content: center;
+    width: 800px;
+    height: 30px;
+    margin: 0px auto;
+    border: 1px solid rgba(182,182,182,1);
+}
+.shopping_list ul li{
+    line-height: 30px;
+    /* border-right: 1px solid red; */
+    text-align: center;
+    flex-grow: 1;
+}
+.shopping_list ul>li:nth-child(1){
+    /* border-right: 1px solid red; */
+    /* width: 100px; */
+}
+.shopping_list ul>li:nth-child(2){
+    /* border: 1px solid red; */
+    width: 200px;
+    /* text-align: center; */
+}
+.iteminfo{
+    width: 800px;
+    display: flex;
+    margin: 0px auto;
+    align-items: center;
+    justify-items: center;
+    /* justify-content: space-between; */
+    border: 1px solid rgba(182,182,182,1);
+}
+.iteminfo img{
+    width: 110px;
+}
+.itemtitle{
+    width: 277px;
+    /* border: 1px solid red; */
+}
+.itemtitle a{
+    display: block;
+    padding: 20px;
+    /* border: 1px solid red; */
+}
+.itemspecpicker{
+    /* border: 1px solid red; */
+    width: 109px;
+}
+.itemspecpicker a{
+    display: block;
+    padding: 20px;
+}
+.itemsnumber{
+    /* border: 1px solid red; */
+    width: 110px;
+}
+.itemsnumber {
+    display: block;
+    padding: 20px 10px;
+}
+.itemsprice{
+    /* border: 1px solid red; */
+    width: 109px;
+}
+.itemsprice a{
+    display: block;
+    padding: 20px;
+}
+.deleteitem{
+    /* display: block; */
+    height: 50px;
+    /* display: flex; */
+}
+.pricesummary{
+    width: 800px;
+    /* display: flex; */
+    margin: 10px auto;
+    text-align: right;
+    padding-right: 180px;
+    font-size: 20px;
+    color: brown;
+}
+.pricesummary span:last-child{
+    border-bottom: 2px solid brown;
+}
+.payment_method{
+    display: flex;
+    align-items: center;
+    width: 800px;
+    margin: 20px auto;
+    font-size: 20px;
+    /* border: 1px solid rebeccapurple; */
+    justify-content: center;
+}
+.payment_method>span{
+    font-size: 24px;
+    font-weight: bolder;
+    /* border-bottom: 1px solid rgba(182,182,182,1) ; */
+}
+.credit_card_block{
+    width: 800px;
+    height: 250px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+}
+.credit_card_block h3{
+    margin-right: 20px;
+}
+.credit_card_block span{
+    height: 1px;
+    background-color:black;
+    border: 1px solid black;
+    width: 600px;
+}
+.credit_card_information{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* justify-items: center; */
+    padding-top: 20px;
+    font-size: 20px;
+}
+.credit_membername{
+    display: flex;
+}
+.card_number{
+    display: flex;
+}
+.exp{
+    display: flex;
+}
+
+.member_information{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    height: 380px;
+}
+.member_information h3{
+    margin-right: 20px;
+}
+.m_i_l{
+    /* height: 120px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    padding-top: 20px;
+    font-size: 20px;
+}
+.m_i_l span{
+    height: 1px;
+    background-color:black;
+    border: 1px solid black;
+    width: 600px;
+}
+.like_mi{
+    display: flex;
+    font-size: 18px;
+}
+.membername{
+    display: flex;
+    /* margin-top: 10px; */
+}
+.birth_date{
+    display: flex;
+    /* margin-top: 10px; */
+}
+.phone_number{
+    display: flex;
+}
+.email{
+    display: flex;
+}
+.address{
+    display: flex;
+}
+input[type=submit]{
+    width: 200px;
+    border: 0;
+    margin-bottom: 20px;
+    font-size: 20px;
+    margin-left: 140px;
+    /* border-radius: 5%; */
+    background-color: rgba(182,182,182,1);
+    height: 50px;
+}
+input[type=submit]:hover{
+    background-color: black;
+    color: #f5f5f7;
+    height: 50px;
+}

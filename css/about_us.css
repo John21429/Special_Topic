@@ -1,0 +1,99 @@
+@import url(../css/reset.css);
+body{
+    /* background-image: url(../img/bgi/about_us_bgi/body_bgi.jpg); */
+    background-size:250%;
+    background-color: rgba(255,255,255,0.5);
+    background-repeat: no-repeat;
+    background-image: url(../img/bgi/about_us_bgi/grayscale-watercolor-leaf-background-beautiful-floral-illustration\ 1.svg);
+    /* opacity: 50%; */
+}
+
+.banner1{
+    /* border: 1px solid red; */
+    background-image: url(../img/bgi/about_us_bgi/banner1_bgi.jpg);
+    width: 1440px;
+    height: 700px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+}
+.banner2{
+    /* background-image: url(../img/bgi/about_us_bgi/body_bgi.jpg); */
+    display: flex;
+    /* border: 1px solid red; */
+    width: 1440px;
+    height: 600px;
+    margin: 20px auto;
+    justify-content: center;
+}
+.about_us_text img{
+    width: 300px;
+    /* height: 150px; */
+    position: relative;
+    /* overflow:visible; */
+    top:-75px;
+    /* border: 1px solid red; */
+}
+.about_us_text{
+    /* border: 1px solid red; */
+    width: 600px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-image: url(../img/bgi/about_us_bgi/b2t_bgi.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* padding-bottom: 50px; */
+    /* position: relative; */
+    /* overflow:visible; */
+}
+.about_us_text p{
+    /* border: 1px solid red; */
+    writing-mode: vertical-lr;
+    line-height: 3em;
+    font-size: 26px;
+    position: relative;
+    top:-50px;
+}
+.banner3 {
+    margin: 0 auto;
+    width: 1220px;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 2em;
+    /* border: 10px solid red; */
+}
+.b3_block1 {
+    margin-top: 70px;
+}
+.b3_block1 img{
+    width: 600px;
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+}
+.b3_block2 img{
+    width: 600px;
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+}
+.banner4{
+    width: 1200px;
+    display: flex;
+    margin: 10px auto;
+    /* justify-items: center; */
+    align-items: center;
+
+}
+.banner4 h3{
+    font-size: 2em;
+    writing-mode: vertical-lr;
+    text-align: center;
+}
+.banner4 p{
+    margin:0 30px;
+    font-size: 18px;
+    line-height: 2.5em;
+}
+

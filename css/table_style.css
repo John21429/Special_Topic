@@ -1,0 +1,114 @@
+@import url(./reset.css);
+body{
+    background-image: url(../img/bgi/style_bgi/Blue\ Marble\ 4.png);
+}
+.wrapper{
+    width: 1440px;
+}
+.banner1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    /* border: 1px solid red; */
+}
+.banner1 h3{
+    writing-mode: vertical-lr;
+    margin: 0 30px;
+    text-align: center;
+}
+.banner1 p{
+    /* border: 1px solid red; */
+    writing-mode: vertical-lr;
+    line-height: 3;
+    /* margin: 100px 0; */
+}
+.banner2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+.banner2 h3{
+    writing-mode: vertical-lr;
+    /* margin: 0 30px; */
+    text-align: center;
+}
+.banner2 p{
+    /* border: 1px solid red; */
+    writing-mode: vertical-lr;
+    line-height: 3;
+    margin: 0px 30px;
+}
+.banner3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    /* border: 1px solid red; */
+}
+.banner3 h3{
+    writing-mode: vertical-lr;
+    margin: 0 30px;
+    text-align: center;
+}
+.banner3 p{
+    /* border: 1px solid red; */
+    writing-mode: vertical-lr;
+    line-height: 3;
+}
+.banner4{
+    display: flex;
+    justify-content: center;
+}
+.b401{
+    text-align: center;
+    margin: 20px;
+}
+.b401 h3{
+    margin: 10px 0;
+}
+.b401 p{
+    margin: 20px 0;
+}
+.b401 a{
+    display: block;
+    margin: 20px auto;
+    font-size: 18px;
+    text-align: center;
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid gray;
+}
+.b402{
+    text-align: center;
+    margin: 20px 0;
+}
+.b402 h3{
+    margin: 10px 0;
+}
+.b402 p{
+    margin: 20px auto;
+    /* border: 1px solid red; */
+    width: 500px;
+}
+.b402 a{
+    display: block;
+    margin: 20px auto;
+    font-size: 18px;
+    text-align: center;
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid gray;
+    border-radius: 10%;
+}
+.banner5{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+.banner5 h3{
+    text-align: center;
+}
