@@ -8,7 +8,6 @@ document.addEventListener('scroll', function(e) {
         document.getElementsByClassName("logo")[0].src ="../img/LOGO_F2_B.png";
         var icon =document.getElementsByClassName("fa-solid");
 
-
         for(let i = 0; i< icon.length; i++){
             // console.log(icon[i]);
             icon[i].style.color = "black";

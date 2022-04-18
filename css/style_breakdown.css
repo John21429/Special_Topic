@@ -4,11 +4,14 @@ body{
 }
 .wrapper{
     width: 1440px;
-    font-size: 20px;
+    /* font-size: 20px; */
 }
 section>a{
     display: block;
     margin: 20px;
+}
+section{
+    font-size: 20px;
 }
 /* b1 */
 .banner1{
