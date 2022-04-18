@@ -9,7 +9,7 @@ document.addEventListener('scroll', function(e) {
             // console.log(icon[i]);
             icon[i].style.color = "black";
         }
-        }else{
+    }else{
         document.getElementsByClassName("logo")[0].src ="../img/LOGO_F2W_1.png";
         var icon =document.getElementsByClassName("fa-solid");
         for(let i = 0; i< icon.length; i++){
