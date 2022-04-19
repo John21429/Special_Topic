@@ -198,14 +198,14 @@ button:hover{
 
 .more_products ul{
     /* border: 1PX solid red; */
-    margin: 0 auto;
+    margin: 20px auto;
     width: 1000px;
     display: flex;
     align-content: center;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 50px;
+    margin-top: 20px;
     background-color: #f5f5f7;
 }
 .more_products li{
