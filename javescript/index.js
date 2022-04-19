@@ -3,14 +3,14 @@
 document.addEventListener('scroll', function() {
     if(window.scrollY >= 700){
         //要做的事情放這邊
-        document.getElementsByClassName("logo")[0].src ="../img/LOGO_F2_B.png";
+        document.getElementsByClassName("logo")[0].src ="./LOGO_F2_B.png";
         var icon =document.getElementsByClassName("fa-solid");
         for(let i = 0; i< icon.length; i++){
             // console.log(icon[i]);
             icon[i].style.color = "black";
         }
     }else{
-        document.getElementsByClassName("logo")[0].src ="../img/LOGO_F2W_1.png";
+        document.getElementsByClassName("logo")[0].src ="./LOGO_F2W_1.png";
         var icon =document.getElementsByClassName("fa-solid");
         for(let i = 0; i< icon.length; i++){
             // console.log(icon[i]);
