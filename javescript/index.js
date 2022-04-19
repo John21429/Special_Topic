@@ -18,7 +18,6 @@ document.addEventListener('scroll', function() {
         }
     }        
 });
-
 var b4h2_at_high = 1200;//設定高度
 
 document.addEventListener('scroll', function() {
