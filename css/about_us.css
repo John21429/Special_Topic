@@ -87,7 +87,7 @@ body{
 
 }
 .banner4 h3{
-    /* font-size: 2em; */
+    font-size: 2em;
     writing-mode: vertical-lr;
     text-align: center;
 }
