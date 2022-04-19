@@ -1,4 +1,4 @@
-@import url(../css/reset.css);
+@import url(./css/reset.css);
 
 body{
 }
@@ -9,7 +9,7 @@ body{
 .banner1{
     width: 1440px;
     height: 700px;
-    background-image: url(../img/new/motherday.png);
+    background-image: url(./img/new/motherday.png);
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0 auto;

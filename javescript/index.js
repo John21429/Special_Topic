@@ -1,6 +1,6 @@
 
 // var icon =document.getElementsByClassName("fa-solid");
-document.addEventListener('scroll', function(e) {
+document.addEventListener('scroll', function() {
     if(window.scrollY >= 700){
         //要做的事情放這邊
         document.getElementsByClassName("logo")[0].src ="../img/LOGO_F2_B.png";

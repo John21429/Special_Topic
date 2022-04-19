@@ -1,7 +1,7 @@
 @import url(./reset.css);
 
 body{
-    background-image: url(../img/bgi/sign_up/sign_up_bgi.png);
+    background-image: url(./img/bgi/sign_up/sign_up_bgi.png);
 }
 input{
     border: 0;

@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sign_in</title>
-    <link rel="stylesheet" href="../css/sign_in.css">
-    <link rel="stylesheet" href="../css/all_2.css">
+    <title>sign_up</title>
+    <link rel="stylesheet" href="./css/sign_up.css">
+    <link rel="stylesheet" href="./css/all_2.css">
     <script src="https://kit.fontawesome.com/fc393adae9.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,8 +18,9 @@
         <header>
             <div class="header">
                 <!-- LOGO -->
-                <a href="../index.html"><img class="logo" src="../img/LOGO_F2_B.png" alt=""></a>
+                <a href="./index.html"><img class="logo" src="./img/LOGO_F2_B.png" alt=""></a>
                 <!-- 總選單列 -->
+                <h1>會員註冊</h1>
                 <nav><a href=""></a>
                     <ul>
                         <!-- 選單列 -->
@@ -34,7 +35,7 @@
                                     <ul>
                                         <li><a href="">日式餐具組</a></li>
                                         <li><a href="">禮盒組</a></li>
-                                        <li><a href="/html/products.html">盤子</a></li>
+                                        <li><a href="/products.html">盤子</a></li>
                                         <li><a href="">碗</a></li>
                                         <li><a href="">杯子</a></li>
                                         <li><a href="">其他配件</a></li>
@@ -46,7 +47,7 @@
                                     <ul>
                                         <li><a href="">夏日小清新</a></li>
                                         <li><a href="">初夏青白瓷</a></li>
-                                        <li><a href="/html/style_breakdown.html">波光綠竹</a></li>
+                                        <li><a href="/style_breakdown.html">波光綠竹</a></li>
                                         <li><a href="">初春粉彩</a></li>
                                         <li><a href="">梅花之歌</a></li>
                                         <li><a href="">水墨懷石</a></li>
@@ -76,39 +77,76 @@
         <!-- 頁首結束 -->
         <article>
             <section>
-                <div class="block">
-                    <div class="block01">
-                        <h3>會員登入</h3>
-                        <p>請輸入您的帳號與密碼</p>
-                        <div class="sign_in">
-                            <div class="username">
-                                <p>帳號：</p>
-                                <input type="username"  placeholder="會員名稱或e-mail" pattern="3em" name="" id="">
-                            </div>
-                            <div class="password">
-                                <p>密碼：</p>
-                                <input type="password" placeholder="您的密碼(8個以上不分大小寫)" name="" id="">
-                            </div>
-                            </div>
-                            <div class="remeber_me">
-                                <input type="checkbox" name="" id="">
-                                <p>記住我</p>
-                                <a href="">忘記密碼</a>
-                            </div>
-                            <div class="sign_up">
-                                <p>還不是會員？</p>
-                                <a href="">立即註冊</a>
-                            </div>
-                            <div class="in_or_up">
-                                <input type="submit" value="登入">
-                                <input type="submit" value="註冊">
-                            </div>
+                <div class="back_sign_in">
+                    <p>已是會員？</p>
+                    <a href="./sign_in.html">請登入</a>
+                </div>
+                <div class="u_p">
+                    <h3>帳號密碼</h3>
+                    <div class="u_p_l">
+                        <span></span>
+                        <div class="username">
+                            <p>帳號：</p> 
+                            <input type="text" placeholder="6個以上的英文或數字" name="username" id="">
                         </div>
-                    <div class="block02">
-                    <p>
-                        立即加入<br>
-                        享超值好禮
-                    </p>
+                        <div class="password">
+                            <p>密碼：</p> 
+                            <input type="text" placeholder="8個以上的英文或數字"name="password" id="">
+                        </div>
+                        <div class="confirm_password">
+                            <p>確認密碼：</p> 
+                            <input type="text" placeholder="請再次輸入您設定的密碼"name="confirm_password" id="">
+                        </div>
+                    </div>
+                </div>
+                <div class="member_information">
+                    <h3>會員資料</h3>
+                    <div class="m_i_l">
+                        <span></span>
+                        <div class="membername">
+                            <p>姓名：</p> 
+                            <input type="text" placeholder="您的本名" name="username" id="">
+                        </div>
+                        <div class="birth_date">
+                            <p>生日(西元)：</p> 
+                            <input type="date" name="birth_date" id="">
+                        </div>
+                        <div class="phone_number">
+                            <p>手機號碼：</p> 
+                            <input type="tel" name="phone_number" placeholder="09xx-xxx-xxx" minlength="10" maxlength="10"id="">
+                        </div>
+                        <div class="email">
+                            <p>電子郵件：</p> 
+                            <input type="email"placeholder="exsample@email.com" name="email" id="">
+                        </div>
+                        <div class="address">
+                            <p>通訊地址：</p>
+                            <select name="" id="">
+                                <option value="Taipei">台北市</option>
+                                <option value="Taipei">新北市</option>
+                            </select>
+                            <select name="" id="">
+                                <option value="">中正區</option>
+                                <option value="">板橋區</option>
+                            </select>
+                            <input type="text" placeholder="街/路,段/巷,弄,號,樓" name="address" id="">
+                        </div>
+                        <input type="submit" value="送出">  
+                        <!-- <div id="twzipcode" class="form-row">
+                            <div class="form-group col">
+                                <div data-role="county" data-style="form-control" data-name="county" data-value=""></div>
+                            </div>
+                            <div class="form-group col">
+                                <div data-role="district" data-style="form-control" data-name="district" data-value=""></div>
+                            </div>
+                            <div class="form-group col">
+                                <div data-role="zipcode" data-style="form-control" data-name="zipcode" data-value=""></div>
+                            </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="inputAddress2" placeholder="居住地址">
+                            </div> -->
+                        </div>
                     </div>
                 </div>
             </section>
@@ -127,7 +165,7 @@
                         </nav>    
                     </div>
                     <div class="footer_l2">
-                        <a href="../index.html"><img src="../img/LOGO_F2_B.png" alt=""></a>
+                        <a href="./index.html"><img src="./img/LOGO_F2_B.png" alt=""></a>
                         <p>本網站為緯育TibaMe前端設計工程師班第76期學員專題作品，本平台僅供學習、展示之用。參考資源:</p>
                         <a href="https://www.tableandstyle.com/">東京食器、</a>
                         <!-- <p>，</p> -->
@@ -157,7 +195,11 @@
             </div>
         </footer>    
     </div>
-
-    
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-twzipcode@1.7.14/jquery.twzipcode.min.js"></script>
+    <script>$("#twzipcode").twzipcode({
+    });</script> -->
 </body>
 </html>
