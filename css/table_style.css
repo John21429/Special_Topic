@@ -1,6 +1,6 @@
 @import url(./reset.css);
 body{
-    background-image: url(./img/bgi/style_bgi/Blue\ Marble\ 4.png);
+    background-image: url(../img/bgi/style_bgi/Blue\ Marble\ 4.png);
 }
 .wrapper{
     width: 1440px;

@@ -100,7 +100,7 @@ h2{
     height: 600px;
     /* border: 1px solid black; */
     display: flex;
-    background-image: url(./img/bgi/index_bgi/PNG/banner2_tb_bgi.png);
+    background-image: url(../img/bgi/index_bgi/PNG/banner2_tb_bgi.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -220,19 +220,19 @@ h2{
 }
 .b4m1{
     flex-grow: 1;
-    background-image: url(./img/index/banner4_img01.png);
+    background-image: url(../img/index/banner4_img01.png);
 }
 .b4m2{
     flex-grow: 1;
-    background-image: url(./img/index/banner4_img02.png);
+    background-image: url(../img/index/banner4_img02.png);
 }
 .b4m3{
     flex-grow: 1;
-    background-image: url(./img/index/banner4_img03.png);
+    background-image: url(../img/index/banner4_img03.png);
 }
 .b4m4{
     flex-grow: 1;
-    background-image: url(./img/index/banner4_img04.png);
+    background-image: url(../img/index/banner4_img04.png);
 }
 .banner4 li:hover{
     flex-grow: 10;
@@ -242,7 +242,7 @@ h2{
     margin-left: 50px;
     /* border: 1px solid red; */
     display: flex;
-    background-image: url(./img/bgi/index_bgi/ul_bgi.png);
+    background-image: url(../img/bgi/index_bgi/ul_bgi.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 80%;
@@ -282,7 +282,7 @@ h2{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url(./img/bgi/index_bgi/more_style_icon.png);
+    background-image: url(../img/bgi/index_bgi/more_style_icon.png);
     position: absolute;
     right: 0px;
     bottom: 160px;

@@ -1,16 +1,16 @@
-@import url(./css/reset.css);
+@import url(./reset.css);
 body{
     /* background-image: url(../img/bgi/about_us_bgi/body_bgi.jpg); */
     background-size:250%;
     background-color: rgba(255,255,255,0.5);
     background-repeat: no-repeat;
-    background-image: url(./img/bgi/about_us_bgi/grayscale-watercolor-leaf-background-beautiful-floral-illustration\ 1.svg);
+    background-image: url(../img/bgi/about_us_bgi/grayscale-watercolor-leaf-background-beautiful-floral-illustration\ 1.svg);
     /* opacity: 50%; */
 }
 
 .banner1{
     /* border: 1px solid red; */
-    background-image: url(./img/bgi/about_us_bgi/banner1_bgi.jpg);
+    background-image: url(../img/bgi/about_us_bgi/banner1_bgi.jpg);
     width: 1440px;
     height: 700px;
     background-size: cover;
@@ -40,7 +40,7 @@ body{
     width: 600px;
     background-size:cover;
     background-repeat: no-repeat;
-    background-image: url(./img/bgi/about_us_bgi/b2t_bgi.jpg);
+    background-image: url(../img/bgi/about_us_bgi/b2t_bgi.jpg);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -87,7 +87,7 @@ body{
 
 }
 .banner4 h3{
-    font-size: 2em;
+    /* font-size: 2em; */
     writing-mode: vertical-lr;
     text-align: center;
 }
