@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pay</title>
     <link rel="stylesheet" href="./css/pay.css">
-    <link rel="stylesheet" href="./css/all_2.css">
+    <!-- <link rel="stylesheet" href="./css/all.css"> -->
     <script src="https://kit.fontawesome.com/fc393adae9.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +18,7 @@
          <header>
             <div class="header">
                 <!-- LOGO -->
-                <a href="index.html"><img class="logo" src="./img/LOGO_F2_B.png" alt=""></a>
+                <a href="index.html"><img class="logo" src="./img/LOGO_F2_B.svg" alt=""></a>
                 <!-- 總選單列 -->
                 <h1>開始結帳</h1>
                 <nav><a href=""></a>
@@ -78,65 +78,38 @@
         <article>
             <section>
                 <span></span>
+
                 <!-- 購物車明細開始 -->
                 <div class="shopping_cart">
                     <div class="shopping_list">
                         <ul>
-                            <li>縮圖</li>
+                            <li>產品照</li>
                             <li>商品</li>
-                            <li>規格</li>
                             <li>數量</li>
-                            <li>價格</li>
+                            <li>單價</li>
                             <li></li>
                         </ul>
                     </div>
-                    <div class="iteminfo">
-                        <img src="./img/index/hot01.png" alt="">
-                        <div class="itemtitle">
-                            <a href="">1616 arita japan 美型菊皿3入組</a>
-                        </div>
-                        <div class="itemspecpicker">
-                            <a href="">顏色：白</a>
-                        </div>
-                        <div class="itemsnumber">
-                            <span>數量：</span>
-                            <select name="" id="">
-                                <option value="">1</option>
-                                <option value="">2</option>
-                                <option value="">3</option>
-                                <option value="">4</option>
-                                <option value="">5</option>
-                            </select>
-                        </div>
-                        <div class="itemsprice">
-                            <a href="">$3999</a>
-                        </div>
-                        <button class="deleteitem">刪除</button>
-                    </div>
-                </div>  
+                <div class="iteminfo"></div>
                 <div class="pricesummary">
                     <span>小計</span>
-                    <span>$3999</span>
+                    <span id="totle"></span>
                 </div>
                 <!-- 購物車明細結束 -->
 
                 <!-- 付款方式 -->
                 <div class="payment_method">
                     <span>付款方式：</span>
-                    <div class="credit_card">
-                        <input type="checkbox" name="" id="">
-                        <span>信用卡</span>   
-                        <img src="" alt="">
+                    <input type="radio" name="payway" id=""> <p>信用卡</p>
+                    <input type="radio" name="payway" id=""><p>貨到付款</p>
                     </div>
-                    <div class="cod">
-                        <input type="checkbox" name="" id="">
-                        <span>貨到付款</span>   
-                    </div>
+                    
                 </div>
                 <div class="credit_card_block">
                     <h3>信用卡資訊</h3>
+                    <span></span>
                     <div class="credit_card_information">
-                        <span></span>
+                        
                         <div class="credit_membername">
                             <p>姓名：</p> 
                             <input type="text" placeholder="您的本名" name="username" id="">
@@ -149,43 +122,16 @@
                             <p>有效日期：</p> 
                             <input type="month" name="" id="">
                         </div>
-                        <div class="exp">
+                        <div class="safecode">
                             <p>安全碼：</p> 
-                            <input type="text" maxlength="3" placeholder="信用卡背面安全碼共3碼"name="" id="">
+                            <input type="text" maxlength="3" placeholder="背面3碼"name="" id="">
                         </div>
-                        <div class="address">
-                            <p>通訊地址：</p>
-                            <select name="" id="">
-                                <option value="Taipei">台北市</option>
-                                <option value="Taipei">新北市</option>
-                            </select>
-                            <select name="" id="">
-                                <option value="">中正區</option>
-                                <option value="">板橋區</option>
-                            </select>
-                            <input type="text" placeholder="街/路,段/巷,弄,號,樓" name="address" id="">
-                        </div>
-                        <!-- <div id="twzipcode" class="form-row">
-                            <div class="form-group col">
-                                <div data-role="county" data-style="form-control" data-name="county" data-value=""></div>
-                            </div>
-                            <div class="form-group col">
-                                <div data-role="district" data-style="form-control" data-name="district" data-value=""></div>
-                            </div>
-                            <div class="form-group col">
-                                <div data-role="zipcode" data-style="form-control" data-name="zipcode" data-value=""></div>
-                            </div>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="inputAddress2" placeholder="居住地址">
-                            </div>
-                        </div> -->
                     </div> 
                 </div>
                 <div class="member_information">
                     <h3>配送資訊</h3>
-                    <div class="m_i_l">
-                        <span></span>
+                    <span></span>
+                    <div class="m_i_l">  
                         <div class="like_mi">
                             <input type="checkbox" name="" id="">
                             <p>同會員資訊</p> 
@@ -208,33 +154,27 @@
                         </div>
                         <div class="address">
                             <p>通訊地址：</p>
-                            <select name="" id="">
-                                <option value="Taipei">台北市</option>
-                                <option value="Taipei">新北市</option>
-                            </select>
-                            <select name="" id="">
-                                <option value="">中正區</option>
-                                <option value="">板橋區</option>
-                            </select>
-                            <input type="text" placeholder="街/路,段/巷,弄,號,樓" name="address" id="">
+                            <div id="twzipcode" class="form-row">
+                                <div class="form-group col">
+                                    <div data-role="county" data-style="form-control" data-name="county" data-value=""></div>
+                                </div>
+                                <div class="form-group col">
+                                    <div data-role="district" data-style="form-control" data-name="district" data-value=""></div>
+                                </div>
+                            </div>
                         </div>
-                        <input type="submit" value="送出">  
-                        <!-- <div id="twzipcode" class="form-row">
-                            <div class="form-group col">
-                                <div data-role="county" data-style="form-control" data-name="county" data-value=""></div>
+                            <div class="ads">
+                                <div style="width: 60px;"class="form-group col">
+                                    <div class="code" data-role="zipcode" data-style="form-control" data-name="zipcode" data-value=""></div>
+                                </div>
+                                <div class="form-group">
+                                    <input class="ad" type="text" class="form-control" id="inputAddress2" placeholder="居住地址">
+                                </div>
                             </div>
-                            <div class="form-group col">
-                                <div data-role="district" data-style="form-control" data-name="district" data-value=""></div>
-                            </div>
-                            <div class="form-group col">
-                                <div data-role="zipcode" data-style="form-control" data-name="zipcode" data-value=""></div>
-                            </div>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="inputAddress2" placeholder="居住地址">
-                            </div>
-                        </div> -->
-                    </div>
+                    </div>                        
+                    <div class="ips">
+                        <input type="submit" value="送出">    
+                    </div>   
                 </div>
             </section>
         </article>
@@ -252,7 +192,7 @@
                         </nav>    
                     </div>
                     <div class="footer_l2">
-                        <a href="index.html"><img src="./img/LOGO_F2_B.png" alt=""></a>
+                        <a href="index.html"><img src="./img/LOGO_F2_B.svg" alt=""></a>
                         <p>本網站為緯育TibaMe前端設計工程師班第76期學員專題作品，本平台僅供學習、展示之用。參考資源:</p>
                         <a href="https://www.tableandstyle.com/">東京食器、</a>
                         <!-- <p>，</p> -->
@@ -282,11 +222,12 @@
             </div>
         </footer>    
     </div>
-        <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/jquery-twzipcode@1.7.14/jquery.twzipcode.min.js"></script>
         <script>$("#twzipcode").twzipcode({
-        });</script> -->
+        });</script>
+        <script src="./javescript/pay.js"></script>
 </body>
 </html>

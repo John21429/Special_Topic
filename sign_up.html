@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sign_up</title>
     <link rel="stylesheet" href="./css/sign_up.css">
-    <link rel="stylesheet" href="./css/all_2.css">
+    <!-- <link rel="stylesheet" href="./css/all_2.css"> -->
     <script src="https://kit.fontawesome.com/fc393adae9.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +18,7 @@
         <header>
             <div class="header">
                 <!-- LOGO -->
-                <a href="index.html"><img class="logo" src="./img/LOGO_F2_B.png" alt=""></a>
+                <a href="index.html"><img class="logo" src="./img/LOGO_F2_B.svg" alt=""></a>
                 <!-- 總選單列 -->
                 <h1>會員註冊</h1>
                 <nav><a href=""></a>
@@ -121,15 +121,21 @@
                         </div>
                         <div class="address">
                             <p>通訊地址：</p>
-                            <select name="" id="">
-                                <option value="Taipei">台北市</option>
-                                <option value="Taipei">新北市</option>
-                            </select>
-                            <select name="" id="">
-                                <option value="">中正區</option>
-                                <option value="">板橋區</option>
-                            </select>
-                            <input type="text" placeholder="街/路,段/巷,弄,號,樓" name="address" id="">
+                            <div id="twzipcode" class="form-row">
+                                <div class="form-group col">
+                                    <div data-role="county" data-style="form-control" data-name="county" data-value=""></div>
+                                </div>
+                                <div class="form-group col">
+                                    <div data-role="district" data-style="form-control" data-name="district" data-value=""></div>
+                                </div>
+                                <div class="form-group col">
+                                    <div data-role="zipcode" data-style="form-control" data-name="zipcode" data-value=""></div>
+                                </div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="inputAddress2" placeholder="居住地址">
+                                </div>
+                            </div>
                         </div>
                         <input type="submit" value="送出">  
                         <!-- <div id="twzipcode" class="form-row">
@@ -165,7 +171,7 @@
                         </nav>    
                     </div>
                     <div class="footer_l2">
-                        <a href="index.html"><img src="./img/LOGO_F2_B.png" alt=""></a>
+                        <a href="index.html"><img src="./img/LOGO_F2_B.svg" alt=""></a>
                         <p>本網站為緯育TibaMe前端設計工程師班第76期學員專題作品，本平台僅供學習、展示之用。參考資源:</p>
                         <a href="https://www.tableandstyle.com/">東京食器、</a>
                         <!-- <p>，</p> -->
@@ -195,11 +201,11 @@
             </div>
         </footer>    
     </div>
-    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-twzipcode@1.7.14/jquery.twzipcode.min.js"></script>
     <script>$("#twzipcode").twzipcode({
-    });</script> -->
+    });</script>
 </body>
 </html>

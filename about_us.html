@@ -10,7 +10,15 @@
     <script src="https://kit.fontawesome.com/fc393adae9.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https: //fonts.googleapis.com/css2?family= Noto+Sans+TC & display = swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <script src="./javescript/foreign/jquery-3.6.0.js"></script>
+    <script>
+        $(function(){
+            if(window.innerWidth < 576){
+               $("#bgi01").attr('src','../img/bgi/about_us_bgi/banner1_Mbgi.png') 
+            }    
+        })
+    </script>
 </head>
 <body>
     <div class="wrapper">
@@ -18,7 +26,7 @@
              <header>
                 <div class="header">
                     <!-- LOGO -->
-                    <a href="./index.html"><img class="logo" src="./img/LOGO_F2W_1.png" alt=""></a>
+                    <a href="./index.html"><img class="logo" src="./img/LOGO_F2W_1.svg" alt=""></a>
                     <!-- 總選單列 -->
                     <nav><a href=""></a>
                         <ul>
@@ -43,43 +51,45 @@
                                     <!-- 擺盤風格選單 -->
                                     <li class="table_style">
                                         <a href="./table_style.html">餐桌風格</a>
-                                        <ul>
-                                            <li><a href="">夏日小清新</a></li>
-                                            <li><a href="">初夏青白瓷</a></li>
-                                            <li><a href="./style_breakdown.html">波光綠竹</a></li>
-                                            <li><a href="">初春粉彩</a></li>
+                                         <ul>
+                                            <li><a href="">夏之清新</a></li>
+                                            <li><a href="">冬之雪白</a></li>
+                                            <li><a href="style_breakdown.html">秋之綠竹</a></li>
+                                            <li><a href="">春之粉彩</a></li>
                                             <li><a href="">梅花之歌</a></li>
                                             <li><a href="">水墨懷石</a></li>
-                                            <li><a href="./table_style.html">更多風格</a></li>
+                                            <li><a href="">更多風格</a></li>
                                         </ul>
                                     </li>
                                 </ul>
                             </li>
                             <!-- 購物車列 -->
                             <li>
-                                <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
-                                <a href=""></a>
+                                <a href="./pay.html">
+                                    <i id="shoppingcart_logo" class="fa-solid fa-cart-shopping"></i>
+                                    <div class="shopping_nums">0</div>
+                                </a>
                             </li>
                             <!-- 會員列 -->
                             <li class="user">
                                 <a href=""><i class="fa-solid fa-image-portrait"></i></a>
-                                <ul>
-                                    <li><a href="./sign_in.html">會員登入</a></li>
-                                    <li><a href="./sign_up.html">會員註冊</a></li>
-                                    <li><a href="">訂單查詢</a></li>
-                                    <li><a href="">購物說明</a></li>
-                                </ul>
                             </li>
                         </ul>
                     </nav>
                 </div>
-                <div class="banner1"></div>
-                    <a class="lefticon" href="">
+                <div class="banner1">
+                    <!-- <iframe src="https://assets.pinterest.com/ext/embed.html?id=5840674507325047" height="900" width="450" frameborder="0" scrolling="no" ></iframe> -->
+                    <img id="bgi01" src="./img/bgi/about_us_bgi/banner1_bgi.png" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+
+                </div>
+                    <!-- <a class="lefticon" href="">
                         <i class="fa-solid fa-angle-left"></i>
                     </a>
                     <a class="righticon" href="">
                         <i class="fa-solid fa-angle-right"></i>
-                    </a>
+                    </a> -->
                 </div>
                 </header>
             <!-- <a class="lefticon" href="">
@@ -94,9 +104,9 @@
             <article>
                 <section>
                     <div class="banner2">
-                        <img src="./img/about_us/ab_img01.jfif" alt="">
+                        <img src="./img/about_us/b201.png" alt="">
                         <div class="about_us_text">
-                            <img src="./img/LOGO_F2_B.png" alt="">
+                            <img src="./img/LOGO_F2_B.svg" alt="">
                             <p>創立於2022年，<br>
                                 嚴格篩選來自日本各知名品牌，<br>
                                 陶瓷、玻璃器皿。<br>
@@ -122,7 +132,9 @@
                             高鐵:板橋站<br>
                             台鐵:板橋站<br>
                         </p>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.585795763765!2d121.46134991492985!3d25.014186783981625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a8195573088b%3A0x6aa9bd949c27f860!2z5p2_5qmL6LuK56uZ!5e0!3m2!1szh-TW!2stw!4v1649940551490!5m2!1szh-TW!2stw" width="800" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div class="map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.585795763765!2d121.46134991492985!3d25.014186783981625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a8195573088b%3A0x6aa9bd949c27f860!2z5p2_5qmL6LuK56uZ!5e0!3m2!1szh-TW!2stw!4v1649940551490!5m2!1szh-TW!2stw"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
                     </div>
                 </section>
             </article>
@@ -141,7 +153,7 @@
                             </nav>    
                         </div>
                         <div class="footer_l2">
-                            <a href="./index.html"><img src="./img/LOGO_F2_B.png" alt=""></a>
+                            <a href="./index.html"><img src="./img/LOGO_F2_B.svg" alt=""></a>
                             <p>本網站為緯育TibaMe前端設計工程師班第76期學員專題作品，本平台僅供學習、展示之用。參考資源:</p>
                             <a href="https://www.tableandstyle.com/">東京食器、</a>
                             <!-- <p>，</p> -->
@@ -172,6 +184,34 @@
         
         </div>
     </div>
-    <script src="./javescript/index.js"></script>
+    <script>
+
+
+        document.addEventListener('scroll', function() {
+            let banner2 = document.getElementsByClassName("banner2")[0];
+            if(window.scrollY>=banner2.offsetTop){
+                //要做的事情放這邊
+                document.getElementsByClassName("logo")[0].src ="../javescript/LOGO_F2_B.svg";
+                var icon =document.getElementsByClassName("fa-solid");
+                for(let i = 0; i< icon.length; i++){
+                    // console.log(icon[i]);
+                    icon[i].style.color = "black";
+                }
+            }else{
+                document.getElementsByClassName("logo")[0].src ="../javescript/LOGO_F2W_1.svg";
+                var icon =document.getElementsByClassName("fa-solid");
+                for(let i = 0; i< icon.length; i++){
+                    // console.log(icon[i]);
+                    icon[i].style.color = "white";
+                }
+            }        
+        });
+        let shoppcarts = JSON.parse(localStorage.getItem('pay_list'))
+        let p_nums = shoppcarts['p_nums'];
+        let shoppcart = document.getElementsByClassName("shopping_nums")[0];
+        let shoppcart_nums = parseInt(shoppcart.textContent);
+        shoppcart.innerHTML = shoppcart_nums + parseInt(p_nums);
+        shoppcart.style.display = "block";
+    </script>
 </body>
 </html>

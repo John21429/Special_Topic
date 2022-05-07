@@ -2,21 +2,16 @@
 body{
     font-family: 'Noto Sans TC', sans-serif;
 }
-.wrapper{
-    width: 1440px;
-    margin: 0 auto;
-}
-header{
-    height: 700px;
-}
+
 .header{
-    width: 1440px;
-    margin: 0 auto;
+    width: 100%;
     /* border: 1px solid red; */
     display: flex;
     justify-content: space-between;
     position: fixed;
+    z-index: 1;
 }
+
 .fa-solid{
     color: rgb(255, 255, 255);
     font-size: 30px;
@@ -24,36 +19,97 @@ header{
     width: 40px;
     text-align: center;
     margin-bottom: 15px;
+    transition: all 1s;
 }
 .logo{
     padding: 0 10px;
-    /* width: 200px; */
-    height: 100px;
-    /* position: absolute; */
-    /* position: fixed; */
-    /* left: 2%;
-    top:2%; */
-
+    width: 100%;
 }
+#shoppingcart_logo{
+    /* color: red !important; */
+    position: relative;
+    transition: all 1s;
+}
+.shopping_nums{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red;
+    right: -5px;
+    top: -8px;
+    border: 2px solid white;
+    text-align: center;
+    line-height: 20px;
+    color: #f5f5f7;
+    display: none;
+    
+}
+@media screen and (max-width:576px) {
+    .shopping_nums{
+        width: 15px;
+        height: 15px;
+        line-height: 15px;
+        font-size: 12px;
+
+    }
+}
+.s_a{
+    animation: s_a .3s
+    
+}
+@keyframes s_a{
+    0%{
+        transform: scale3d(1.5,1.5,1.5);
+    }
+    100%{
+        transform: scale3d(1,1,1);
+    }
+}
+/* ------RWD----- */
+@media screen and (max-width: 576px){
+    img.logo{
+      width: 50%;
+      padding: 5px;
+    }
+    i.fa-solid{
+        font-size: 20px;
+        width: 30px;
+    }
+    div.header ul {
+        padding: 10px;
+        z-index: 1;
+    }
+    div.header ul li ul{
+        left: -100px;
+    }
+  }
+  @media screen and (min-width: 576px)and (max-width:991.98px){
+    img.logo{
+      width: 60%;
+    }
+    i.fa-solid{
+        font-size: 25px;
+        width: 40px;
+    }
+    div.header ul {
+        padding: 10px;
+        z-index: 1;
+    }
+    div.header ul li ul{
+        left: -100px;
+    }
+  }
 /* nav */
 .header ul{
     padding: 25px; 
-    /* position: fixed; */
-    
-    /* right: 2%;
-    top:2%; */
-
+    display: inline-flex;
 }
 .header ul>li{
     /* border: 1px solid red; */
-    /* padding-bottom: 10px; */
     position: relative;
-    /* display: none; */
-    /* transition: 0.7s;   */
 }
 .header ul li ul li {
-    /* border: 1px solid red; */
-    /* display: inline-block; */
     width: 90px;
     height: 30px;
     text-align: center;
@@ -67,41 +123,33 @@ header{
     /* border: 1px solid #000; */
     transition: all 1s;   
 }
+.shoppingcart a{
+    display: block;
+    /* border: 1px solid #000; */
+    transition: all 1s;  
+}
 .user a{
     display: block;
     /* border: 1px solid #000; */
     transition: all 1s;  
 }
-/* .table style li{
-    position: absolute;
-    top: 10px;
 
-} */
 .header ul li ul{
-    /* width: 80px; */
-    /* height: 100%; */
     position: absolute;
     /* background-color: #fff; */
-    left: -124px;
+    left: -115px;
     top: -19px;
     display: none;
-    /* transition: all 1s;    */
 }
-/* .banner1 ul>li:nth-child(3)>ul>li{
-    display: none;
-}
-.banner1 ul>li:nth-child(1)>ul>li:nth-child(4)>ul{
-    display: none;
-}
-*/
+
 /* nav show */
 .header ul li:hover>ul{
-    /* transform: scale3d(1.1,1.1,1.1); */
     display: block;
+    
 }
 .header ul li ul li:hover{
-    /* transition: all 1s; */
     display: block;
+    background-color: dimgray;
 }
 .header ul a:hover{
     transform: scale3d(1.1,1.1,1.1);
@@ -109,26 +157,32 @@ header{
 
 /* nav_end */
 .banner1{
-    /* position: relative; */
+    position: relative;
 }
 .lefticon{
-    position:relative;
-    top: -350px;
-    left: 10px;
+
+
 }
 .righticon{
-    position: relative;
-    top: -350px;
-    right: -1350px;
+
+}
+.lefticon:hover{
+    transition: all .5s;
+    transform: scale3d(1.1,1.1,1.1)
+}
+.righticon:hover{
+    transition: all .5s;
+    transform: scale3d(1.1,1.1,1.1)
 }
 /* header_end */
+
+
 h3{
     font-size: 2em;
     text-shadow: 2px 1px 1px rgba(0,0,0,0.3);
 }
 h1{
     text-shadow: 2px 1px 1px rgba(0,0,0,0.3);
-    font-size: 3em;
 }
 h2{
     font-size: 3em;
@@ -141,24 +195,23 @@ a{
 p{
     color: black;
 }
+
+
 /* footer */
-.footer_box{
-    width: 1440px;
-    background-color: rgba(182,182,182,1);
-    margin: 0 auto;
-}
 .footer{
-    width: 1200px;
-    height: 170px;
+    width: 100%;
+    height: 100%;
+    padding: 0 auto ;
     background-color: rgba(182,182,182,1);
-    margin: 0 auto;
+    justify-content: center;
     display: flex;
     flex-basis: 0;
     flex-shrink: 0;
+    /* border: 1px solid red; */
 }
-footer img{
-    /* width: 180px; */
-    height: 120px;
+.footer img{
+    width: 30%;
+    margin:20px 0;
 }
 .footer_l1{
     flex-basis: 0;
@@ -180,19 +233,20 @@ footer img{
     flex-basis: 0;
     flex-shrink: 0;
     /* border: 1px solid red; */
-    flex-grow: 1;
+    flex-grow: 2.5;
     text-align: center;
     font-size: 12px;
 }
 
 .footer_l3{
+    /* flex-basis: 0; */
+    /* flex-shrink: 0; */
+    flex-grow: 1;
     flex-basis: 0;
     flex-shrink: 0;
-    flex-grow: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-grow: 1;
     /* border: 1px solid red; */
 }
 .footer_l3 ul{
@@ -213,17 +267,103 @@ footer img{
 .footer a:hover{
     transform: scale3d(1.1,1.1,1.1);
 }
-.top_icon{
-    /* font-size: 2em; */
+#myBtn {
     background-image: url(../img/up-arrow.png);
     background-size: cover;
-    width: 30px;
-    height: 30px;
-    position: fixed;
-    right: 3%;
-    bottom: 3%;
     border-radius: 50%;
-    /* border: #000; */
-    box-shadow:1.1,1.1,1.1 #000;
-    /* color: #000; */
+    width: 50px;
+    height: 50px;
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 1; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    /* background-color: gray; Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    font-size: 18px; /* Increase font size */
+    transition: all 3s;
+  }
+#myBtn:hover {
+    background-color:yellow; /* Add a dark-grey background on hover */
+  }
+
+  @media screen and (max-width: 576px){
+      div.footer{
+          height: 100%;
+      }
+      div.footer_l1 {
+          font-size: 10px;
+      }
+      div.footer_l2{
+        margin-bottom: 20px;
+    }
+    div.footer_l2 p{
+        margin-top: 10px;
+        font-size: 8px;
+        width: auto;
+        height: auto;
+        line-height: 1.6;
+    }
+    div.footer_l2 img{
+        width: 60%;
+        margin: 0;
+        margin-top: 20px;
+    }
+    div.footer_l3 ul{
+        flex-direction: column;
+    }
+    div.footer_l3 li{
+        padding-right: 5px;
+        margin-bottom: 10px;
+    }
+
+    i.fa-brands{
+        font-size: 150%;
+        
+    }
+    #myBtn{
+        width: 20px;
+        height: 20px;
+        font-size: 20px;
+        right: 10px;
+    }
+  }
+
+  @media screen and (min-width:576px) and (max-width: 991.98px){
+    div.footer{
+        height: 100%;
+    }
+    div.footer_l1 {
+        font-size: 14px;
+    }
+    div.footer_l2{
+      font-size: 12px;
+    }
+    div.footer_l2 a{
+        font-size: 12px;
+    }
+    div.footer_l2 img{
+        width: 45%;
+    }
+    div.footer_l3 ul{
+        flex-direction: column;
+    }
+    div.footer_l3 li{
+        padding-right: 5px;
+        margin-bottom: 10px;
+    }
+
+    i.fa-brands{
+        font-size: 175%;
+    }
+    #myBtn{
+        width: 20px;
+        height: 20px;
+        font-size: 20px;
+        /* padding: 20px; */
+    }
 }

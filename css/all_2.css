@@ -53,9 +53,11 @@ header{
     margin: 30px; 
     display: inline-flex;
 }
+
 .header ul>li{
     position: relative;
 }
+
 .header ul li ul li {
     /* border: 1px solid red; */
     width: 90px;
@@ -66,16 +68,7 @@ header{
     border-bottom: 0.5px solid black;
     transition: all 1s 12s;
 }
-.all_list ul a{
-    display: block;
-    /* border: 1px solid #000; */
-    transition: all 1s;   
-}
-.user a{
-    display: block;
-    /* border: 1px solid #000; */
-    transition: all 1s;  
-}
+
 .header ul li ul{
     /* width: 80px; */
     /* height: 100%; */
@@ -86,13 +79,7 @@ header{
     display: none;
     z-index: 1;
 }
-/* .banner1 ul>li:nth-child(3)>ul>li{
-    display: none;
-}
-.banner1 ul>li:nth-child(1)>ul>li:nth-child(4)>ul{
-    display: none;
-}
-*/
+
 /* nav show */
 .header ul li:hover>ul{
     display: block;

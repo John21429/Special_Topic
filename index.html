@@ -11,27 +11,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable= yes">
+    <script src="./javescript/foreign/jquery-3.6.0.js"></script>
 </head> 
 <body>
-    <div class="wrapper">
-        <!-- 頁首 -->
              <!-- 頁首 -->
              <header>
                 <div class="header">
                     <!-- LOGO -->
-                    <a href="index.html"><img class="logo" src="./img/LOGO_F2W_1.png" alt=""></a>
+                    <a href="index.html"><img class="logo" src="./img/LOGO_F2W_1.svg" alt=""></a>
                     <!-- 總選單列 -->
-                    <nav><a href=""></a>
+                    <nav>
                         <ul>
                             <!-- 選單列 -->
                             <li class="all_list">
-                                <a href=""><i class="fa-solid fa-bars"></i></a>
+                                <a href="#"><i class="fa-solid fa-bars"></i></a>
                                 <ul>
                                     <li><a href="about_us.html">關於我們</a></li>
                                     <li><a href="./new.html">最新消息</a></li>
                                     <!-- 商品類別選單 -->
                                     <li class=" products">
-                                        <a href="">商品類別</a>
+                                        <a href="#">商品類別</a>
                                         <ul>
                                             <li><a href="">日式餐具組</a></li>
                                             <li><a href="">禮盒組</a></li>
@@ -45,10 +45,10 @@
                                     <li class="table_style">
                                         <a href="table_style.html">餐桌風格</a>
                                         <ul>
-                                            <li><a href="">夏日小清新</a></li>
-                                            <li><a href="">初夏青白瓷</a></li>
-                                            <li><a href="style_breakdown.html">波光綠竹</a></li>
-                                            <li><a href="">初春粉彩</a></li>
+                                            <li><a href="">夏之清新</a></li>
+                                            <li><a href="">冬之雪白</a></li>
+                                            <li><a href="style_breakdown.html">秋之綠竹</a></li>
+                                            <li><a href="">春之粉彩</a></li>
                                             <li><a href="">梅花之歌</a></li>
                                             <li><a href="">水墨懷石</a></li>
                                             <li><a href="">更多風格</a></li>
@@ -58,36 +58,41 @@
                             </li>
                             <!-- 購物車列 -->
                             <li>
-                                <a href="pay.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                                <a href="./pay.html">
+                                    <i id="shoppingcart_logo" class="fa-solid fa-cart-shopping"></i>
+                                    <div class="shopping_nums">0</div>
+                                </a>
                             </li>
                             <!-- 會員列 -->
                             <li class="user">
                                 <a href="sign_in.html"><i class="fa-solid fa-image-portrait"></i></a>
-                                <ul>
-                                    <li><a href="sign_in.html">會員登入</a></li>
-                                    <li><a href="sign_up.html">會員註冊</a></li>
-                                    <li><a href="">訂單查詢</a></li>
-                                    <li><a href="">購物說明</a></li>
-                                </ul>
                             </li>
                         </ul>
                     </nav>
                 </div>
+                <!-- <button class="lefticon">
+                    <i class="fa-solid fa-angle-left"></i>
+                </button> -->
                 <div class="banner1">
-                    <p class="bh01">讓你的餐桌</p>
-                    <div class="b2_block">
-                        <p class="bh02">也</p>
-                        <p class="bh03">很</p>
-                        <p class="bh04">Pro！</p>
-                    </div>
-                </div>
-                    <a class="lefticon" href="">
-                        <i class="fa-solid fa-angle-left"></i>
-                    </a>
-                    <a class="righticon" href="">
-                        <i class="fa-solid fa-angle-right"></i>
-                    </a>
-                </div>
+                        <img class="banner1_bgi" id="bgi01"src="./img/bgi/index_bgi/b1_bgi01.png" alt="">
+                        <img class="banner1_bgi" id="bgi02"src="./img/bgi/index_bgi/b1_bgi02.png" alt="">
+                        <img class="banner1_bgi" id="bgi03"src="./img/bgi/index_bgi/b1_bgi03.png" alt="">
+                        <img class="banner1_bgi" id="bgi04"src="./img/bgi/index_bgi/b1_bgi04.svg" alt="">
+                        <img class="banner1_bgi" id="bgi05"src="./img/bgi/index_bgi/b1_bgi05.svg" alt="">
+                    <ul id="imgButton">
+                        <!-- <li class="clickMe"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li> -->
+                    </ul>  
+                </div>                    
+                <!-- <button class="righticon">
+                    <i class="fa-solid fa-angle-right"></i>
+                </button> -->
             </header>
             <!-- 頁首結束 -->
         <!-- 內文開始 -->
@@ -113,28 +118,28 @@
                     <ul>
                         <li>
                             <a href="">
-                                <img src="./img/index/banner_img1.jpg" alt="">
+                                <img src="./img/index/banner_img1.png" alt="">
                                     <h3>石川縣九谷燒</h3>
                                 </img>
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <img src="./img/index/banner_img2.jpg" alt="">
+                                <img src="./img/index/banner_img2.png" alt="">
                                     <h3>佐賀縣有田燒</h3>
                                 </img>
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <img src="./img/index/banner_img3.jpg" alt="">
+                                <img src="./img/index/banner_img3.png" alt="">
                                     <h3>岐阜縣美濃燒</h3>
                                 </img>
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <img src="./img/index/banner_img4.jpg" alt="">
+                                <img src="./img/index/banner_img4.png" alt="">
                                     <h3>愛知縣瀨戶燒</h3>
                                 </img>
                             </a>
@@ -143,30 +148,31 @@
                 </div>
                 <!-- 風格區塊 -->
                 <div class="banner4">
+                    <h1>特色餐桌風格</h1>
                     <ul>
                         <li class="b4m1">
                             <a href="">
-                            <h3>波光綠竹</h3>
+                            <h3>秋之綠竹</h3>
                             </a>
                         </li>
                         <li class="b4m2">
                             <a href="">
-                            <h3>夏日小清新</h3>
+                            <h3>夏之清新</h3>
                             </a>
                         </li>
                         <li class="b4m3">
                             <a href="">
-                            <h3>初夏青白瓷</h3>
+                            <h3>冬之雪白</h3>
                             </a>
                         </li>
                         <li class="b4m4">
                             <a href="">
-                            <h3>初春粉彩</h3>
+                            <h3>春之粉彩</h3>
                             </a>
                         </li>
                     </ul>
                     <div class="b4_tb">
-                    <h2 class="b4tb_h2">沒想法?!</h2>
+                    <h2 class="b4tb_h2">沒想法</h2>
                     <p>來看看我們為您準備的<br>
                         流行風格組合吧!</p>
                     <a class="more_ts" href="table_style.html">
@@ -181,7 +187,7 @@
                         <li>
                             <a href="">
                                 <img src="./img/index/hot02.png" alt="">
-                                    <p>有田燒 結晶金卷清酒器組 ＋金山燒雲朵盤<br>
+                                    <p>有田燒 結晶金卷清酒器組<br>
                                         $2990</p>
                                 </img>
                             </a>
@@ -197,7 +203,7 @@
                         <li>
                             <a href="products.html">
                                 <img src="./img/index/hot01.png" alt="">
-                                    <p>1616 arita japan 美型菊皿3入組<br>
+                                    <p>Arita Japan 美型菊皿3入組<br>
                                         $3590
                                     </p>
                                 </img>
@@ -206,7 +212,7 @@
                         <li>
                             <a href="">
                                 <img src="./img/index/hot04.png" alt="">
-                                    <p>Cacomi 多功能碗(經典6入組)-賞美堂<br>
+                                    <p>瓔珞紋向付 有田燒<br>
                                         $5490</p>
                                 </img>
                             </a>
@@ -214,7 +220,7 @@
                         <li>
                             <a href="">
                                 <img src="img/index/hot05.png" alt="">
-                                    <p>津輕琉璃 八彩睡魔祭 清酒杯壺組<br>
+                                    <p>輕琉璃 八彩睡魔祭 清酒杯壺組<br>
                                         $1990</p>
                                 </img>
                             </a>
@@ -222,7 +228,7 @@
                         <li>
                             <a href="">
                                 <img src="./img/index/hot06.png" alt="">
-                                    <p>古九谷5寸點心盤三件組-九谷青郊窯<br>
+                                    <p>木の葉小皿 時代繪<br>
                                         $2990</p>
                                 </img>
                             </a>
@@ -246,11 +252,11 @@
                     </nav>    
                 </div>
                 <div class="footer_l2">
-                    <a href="index.html"><img src="./img/LOGO_F2_B.png" alt=""></a>
-                    <p>本網站為緯育TibaMe前端設計工程師班第76期學員專題作品，本平台僅供學習、展示之用。參考資源:</p>
-                    <a href="https://www.tableandstyle.com/">東京食器、</a>
+                    <img src="./img/LOGO_F2_B.svg" alt="">
+                    <p>本網站為緯育TibaMe前端設計工程師班第76期學員專題作品，本平台僅供學習、展示之用。參考資源:<a href="https://www.tableandstyle.com/">東京食器、</a>
                     <!-- <p>，</p> -->
-                    <a href="https://shop.waga-waga.com/">waga。</a>
+                    <a href="https://shop.waga-waga.com/">waga。</a></p>
+
                     <!-- <p>。</p> -->
                 </div>
                 <div class="footer_l3">
@@ -275,8 +281,7 @@
             </div>    
         </div>
         </footer>
-        <button class="top_icon"></button>
-    </div>
+        <button  id="myBtn" title="Go to top"></button>
     <script src="./javescript/index.js"></script>
 </body>
 </html>

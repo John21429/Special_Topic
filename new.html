@@ -11,20 +11,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <script src="./javescript/foreign/jquery-3.6.0.js"></script>
 </head>
 <body>
-    <div class="wrapper">
       <!-- 頁首 -->
-            <header>
-                    <div class="header">
+        <header>
+            <div class="header">
                         <!-- LOGO -->
-                        <a href="index.html"><img class="logo" src="./img/LOGO_F2W_1.png" alt=""></a>
+                        <a href="index.html"><img class="logo" src="./img/LOGO_F2W_1.svg" alt=""></a>
                         <!-- 總選單列 -->
-                        <nav><a href=""></a>
+                        <nav><a href="#"></a>
                             <ul>
                                 <!-- 選單列 -->
                                 <li class="all_list">
-                                    <a href=""><i class="fa-solid fa-bars"></i></a>
+                                    <a href="#"><i class="fa-solid fa-bars"></i></a>
                                     <ul>
                                         <li><a href="./about_us.html">關於我們</a></li>
                                         <li><a href="./new.html">最新消息</a></li>
@@ -32,67 +32,53 @@
                                         <li class=" products">
                                             <a href="">商品類別</a>
                                             <ul>
-                                                <li><a href="">日式餐具組</a></li>
-                                                <li><a href="">禮盒組</a></li>
+                                                <li><a href="#">日式餐具組</a></li>
+                                                <li><a href="#">禮盒組</a></li>
                                                 <li><a href="products.html">盤子</a></li>
-                                                <li><a href="">碗</a></li>
-                                                <li><a href="">杯子</a></li>
-                                                <li><a href="">其他配件</a></li>
+                                                <li><a href="#">碗</a></li>
+                                                <li><a href="#">杯子</a></li>
+                                                <li><a href="#">其他配件</a></li>
                                             </ul>
                                         </li>
                                         <!-- 擺盤風格選單 -->
                                         <li class="table_style">
                                             <a href="./table_style.html">餐桌風格</a>
                                             <ul>
-                                                <li><a href="">夏日小清新</a></li>
-                                                <li><a href="">初夏青白瓷</a></li>
-                                                <li><a href="style_breakdown.html">波光綠竹</a></li>
-                                                <li><a href="">初春粉彩</a></li>
-                                                <li><a href="">梅花之歌</a></li>
-                                                <li><a href="">水墨懷石</a></li>
-                                                <li><a href="table_style.html">更多風格</a></li>
+                                                <li><a href="#">夏之清新</a></li>
+                                                <li><a href="#">冬之雪白</a></li>
+                                                <li><a href="style_breakdown.html">秋之綠竹</a></li>
+                                                <li><a href="#">春之粉彩</a></li>
+                                                <li><a href="#">梅花之歌</a></li>
+                                                <li><a href="#">水墨懷石</a></li>
+                                                <li><a href="#">更多風格</a></li>
                                             </ul>
                                         </li>
                                     </ul>
                                 </li>
                                 <!-- 購物車列 -->
                                 <li>
-                                    <a href="pay.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                                    <a href="./pay.html">
+                                        <i id="shoppingcart_logo" class="fa-solid fa-cart-shopping"></i>
+                                        <div class="shopping_nums">0</div>
+                                    </a>
                                 </li>
                                 <!-- 會員列 -->
                                 <li class="user">
                                     <a href=""><i class="fa-solid fa-image-portrait"></i></a>
-                                    <ul>
-                                        <li><a href="sign_in.html">會員登入</a></li>
-                                        <li><a href="sign_up.html">會員註冊</a></li>
-                                        <li><a href="">訂單查詢</a></li>
-                                        <li><a href="">購物說明</a></li>
-                                    </ul>
                                 </li>
                             </ul>
                         </nav>
-                    </div>
-                    <div class="banner1"></div>
-                        <a class="lefticon" href="">
-                            <i class="fa-solid fa-angle-left"></i>
-                        </a>
-                        <a class="righticon" href="">
-                            <i class="fa-solid fa-angle-right"></i>
-                        </a>
-                    </div>
-                    
-               
-                <!-- <a class="lefticon" href="">
-                    <i class="fa-solid fa-angle-left"></i>
-                </a>
-                <a class="rigthicon" href="">
-                    <i class="fa-solid fa-angle-right"></i>
-                </a> -->
+            </div>
+            <div class="banner1">
+                <img id="bgi01" class="banner1_bgi"src="./img/bgi/new_bgi/spring01 (2).png" alt="">
+                <img id="bgi02" class="banner1_bgi"src="./img/bgi/new_bgi/b1_bgi02.png" alt="">
+                <img id="bgi03" class="banner1_bgi"src="./img/bgi/new_bgi/motherday 1.png" alt="">
+            </div>              
+        </header>
                 <!-- 頁首結束 -->
-                </header>
             <article>
                 <section>
-                    <div class="news">
+                    <div class="banner2">
                         <div class="text_block">
                             <h3>【4/15 – 5/9 母親節 滿額折扣】</h3>
                             <p>滿$5,000 現折$300 ； 折扣碼 【mom520】<br>
@@ -100,10 +86,9 @@
                                 滿$8,000送 -春田燒組 【價值$800】<br>
                             </p>
                         </div>
-                        <img src="./img/new/spring_lg.jpg" alt="">
+                        <img src="./img/new/spring_lg 2.png" alt="">
                     </div>
-                    <div class="banner2">
-
+                    <div class="banner3">
                         <ul>
                             <li><a href="./products.html"><img src="./img/new/Group 113.svg" alt=""></a></li>
                             <li><a href=""><img src="./img/new/Group 111.svg" alt=""></a></li>
@@ -111,13 +96,13 @@
                             <li><a href=""><img src="./img/new/Group 114.svg" alt=""></a></li>
                         </ul>
                     </div>
-                    <div class="banner3">
+                    <div class="banner4">
                         <h1>超值商品組合</h1>
                         <ul>
                             <li>
                                 <a href="">
                                     <img src="./img/index/hot02.png" alt="">
-                                        <p>有田燒 結晶金卷清酒器組 ＋金山燒雲朵盤<br>
+                                        <p>有田燒 結晶金卷清酒器組<br>
                                             $2990
                                         </p>
                                     </img>
@@ -135,7 +120,7 @@
                             <li>
                                 <a href="./products.html">
                                     <img src="./img/index/hot01.png" alt="">
-                                        <p>1616 arita japan 美型菊皿3入組<br>
+                                        <p>Arita Japan 美型菊皿3入組<br>
                                             $3590
                                         </p>
                                     </img>
@@ -144,7 +129,7 @@
                             <li>
                                 <a href="">
                                     <img src="./img/index/hot04.png" alt="">
-                                        <p>Cacomi 多功能碗(經典6入組)-賞美堂<br>
+                                        <p>多功能碗(經典6入組)-賞美堂<br>
                                             $5490
                                         </p>
                                     </img>
@@ -168,7 +153,7 @@
                                 </nav>    
                             </div>
                             <div class="footer_l2">
-                                <a href="index.html"><img src="./img/LOGO_F2_B.png" alt=""></a>
+                                <a href="index.html"><img src="./img/LOGO_F2_B.svg" alt=""></a>
                                 <p>本網站為緯育TibaMe前端設計工程師班第76期學員專題作品，本平台僅供學習、展示之用。參考資源:</p>
                                 <a href="https://www.tableandstyle.com/">東京食器、</a>
                                 <!-- <p>，</p> -->
@@ -195,8 +180,66 @@
                                     </ul>
                                 </div>
                             </div>    
-                    </div>       
-    </div>
-    <script src="./javescript/index.js"></script>
+                    </div> 
+    <!-- <script src="./javescript/all.js"></script> -->
+    <script>
+        $(function(){
+            if( window.innerWidth < 576 ){
+            $('#bgi01').attr("src","./img/bgi/new_bgi/mobile/b1_bgi03M.png");
+            $('#bgi02').attr("src","./img/bgi/new_bgi/mobile/b1_bgi02M.png");
+            $('#bgi03').attr("src","./img/bgi/new_bgi/mobile/b1_bgi01M.png");
+            }
+        })
+
+        let imgCount = $('.banner1_bgi').length;
+        let index =0;
+        let w_width = $('.banner1').width();
+        // console.log(w_width);
+
+        setInterval(function(){
+            index++
+            index = index % imgCount
+            $('.banner1_bgi').animate({
+                left: w_width * index * -1
+            })
+            // setTimeout(function(){
+            //     $('.banner1_bgi').animate({
+            //     left: w_width * index * -1
+                
+            // })
+        },4000);
+
+        document.addEventListener('scroll', function() {
+            let banner2 = document.getElementsByClassName("banner2")[0];
+            if(window.scrollY>=banner2.offsetTop){
+                //要做的事情放這邊
+                document.getElementsByClassName("logo")[0].src ="../javescript/LOGO_F2_B.svg";
+                var icon =document.getElementsByClassName("fa-solid");
+                for(let i = 0; i< icon.length; i++){
+                    // console.log(icon[i]);
+                    icon[i].style.color = "black";
+                }
+            }else{
+                document.getElementsByClassName("logo")[0].src ="../javescript/LOGO_F2W_1.svg";
+                var icon =document.getElementsByClassName("fa-solid");
+                for(let i = 0; i< icon.length; i++){
+                    // console.log(icon[i]);
+                    icon[i].style.color = "white";
+                }
+            }        
+        });
+        $(function(){
+            $('.all_list').on("tap",function(){
+                $('.header ul li>ul').css({
+                    display: block,
+                })
+            })
+            $('.header ul li ul').on("tap",function(){
+                $('.header ul li ul li').css({
+                    display: block,
+                })
+            })
+        })
+    </script>
 </body>
 </html>

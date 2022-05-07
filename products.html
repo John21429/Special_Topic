@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>products</title>
     <link rel="stylesheet" href="./css/products.css">
-    <link rel="stylesheet" href="./css/all_2.css">
+    <link rel="stylesheet" href="./css/all.css">
     <script src="https://kit.fontawesome.com/fc393adae9.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +18,7 @@
             <header>
                 <div class="header">
                     <!-- LOGO -->
-                    <a href="index.html"><img class="logo" src="./img/LOGO_F2_B.png" alt=""></a>
+                    <a href="index.html"><img class="logo" src="./img/LOGO_F2_B.svg" alt=""></a>
                     <!-- 總選單列 -->
                     <nav><a href=""></a>
                         <ul>
@@ -44,30 +44,27 @@
                                     <li class="table_style">
                                         <a href="">餐桌風格</a>
                                         <ul>
-                                            <li><a href="">夏日小清新</a></li>
-                                            <li><a href="">初夏青白瓷</a></li>
-                                            <li><a href="style_breakdown.html">波光綠竹</a></li>
-                                            <li><a href="">初春粉彩</a></li>
+                                            <li><a href="">夏之清新</a></li>
+                                            <li><a href="">冬之雪白</a></li>
+                                            <li><a href="style_breakdown.html">秋之綠竹</a></li>
+                                            <li><a href="">春之粉彩</a></li>
                                             <li><a href="">梅花之歌</a></li>
                                             <li><a href="">水墨懷石</a></li>
-                                            <li><a href="table_style.html">更多風格</a></li>
+                                            <li><a href="">更多風格</a></li>
                                         </ul>
                                     </li>
                                 </ul>
                             </li>
                             <!-- 購物車列 -->
                             <li>
-                                <a href="./pay.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                                <a href="./pay.html">
+                                    <i id="shoppingcart_logo" class="fa-solid fa-cart-shopping"></i>
+                                    <div class="shopping_nums">0</div>
+                                </a>
                             </li>
                             <!-- 會員列 -->
                             <li class="user">
                                 <a href=""><i class="fa-solid fa-image-portrait"></i></a>
-                                <ul>
-                                    <li><a href="sign_in.html">會員登入</a></li>
-                                    <li><a href="sign_up.html">會員註冊</a></li>
-                                    <li><a href="">訂單查詢</a></li>
-                                    <li><a href="">購物說明</a></li>
-                                </ul>
                             </li>
                         </ul>
                     </nav>
@@ -84,73 +81,55 @@
                 </header>
             <article>
                 <section>
-                     <a href="">首頁>商品選單>盤子>1616 arita japan 美型菊皿3入組</a>
+                     <a href="">首頁>商品選單>盤子>Arita Japan 美型菊皿3入組</a>
                      <!-- 商品頁 -->
                      <div class="banner1">
                             <div class="b1_tb1">
-                                <div class="products_photo"></div>
+                                <div data-bgurl="./img/index/hot01.png" class="products_photo"></div>
                                 <div class="b1_tb2">
                                     <button class="p_style1"></button>
                                     <button class="p_style2"></button>
-                                    <button class="p_red"></button>
-                                    <button class="p_blue"></button>
-                                    <button class="p_gray"></button>
-                                    <button class="p_yellow"></button>
+                                    <button class="p_style3"></button>
+                                    <button class="p_style4"></button>
+                                    <button class="p_style5"></button>
                                 </div>
                             </div>
                             <div class="b1_tb3">
-                                <h3>1616 arita japan 美型菊皿3入組</h3>
+                                <h3 id="p_id">Arita Japan 美型菊皿3入組</h3>
                                 <p class="tb3_p1">產地類別:有田燒<br>
                                     材質:陶磁<br>
                                     大小:φ227xH23mm<br>
                                     建議售價：NT.$3999元
                                 </p>
-                                <div class="c_block">
-                                    <p>顏色：</p>
-                                    <select name="Specification" id="psflist">
-                                        <option value="">請選擇你要的顏色</option>
-                                        <option value="red">霓虹</option>
-                                        <option value="blue">水藍</option>
-                                        <option value="gray">夜灰</option>
-                                        <option value="yellow">粉黃</option>
-                                    </select>
-                                </div>
                                 <div class="q_block">
                                     <p>數量：</p>
                                     <select name="quantity" id="quantity">
-                                        <option value="one">1</option>
-                                        <option value="two">2</option>
-                                        <option value="three">3</option>
-                                        <option value="four">4</option>
-                                        <option value="five">5</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
                                     </select>
                                 </div>
                                 <img src="./img/payment.svg" alt="">
                                 <p class="tb3_p2">宅配滿NT$1,000免運</p>
                                 <div class="button">
-                                    <form action="./pay.html">
-                                        <button>加入購物車</button>
-                                        <button>立即結帳</button>
+                                    <form action="#">
+                                        <button id="go_to_pay">加入購物車</button>
+                                        <button id="go_to_pay_now">立即結帳</button>
                                     </form>
                                 </div>
+                                
                             </div>
                      </div>
                      <!-- 商品內文 -->
                     <div class="section2">
                         <div class="s2_tb1">
                             <div class="tb1_p">
-                                <p>新有田燒1616 arita japan 的高人氣系列：TY standard，此款菊皿是與東京皇宮飯店合作的聯名款，稱之為palace plate。</p>
+                                <p>新有田燒arita japan 的高人氣系列：TY standard，此款菊皿是與東京皇宮飯店合作的聯名款，稱之為palace plate。</p>
                                 <p>Palace也貼切形容這款菊皿的皇室等級品味，以高密度瓷土加上高超科技工藝，燒製出雖然有著不上釉的樸實磨砂質感，卻極為細緻的質地。</p>
                                 <p>材質本身不吸水，不需擔心食物沾染問題。</p>
                                 <p>還有實用的22cm大盤及16cm小盤組合，組合在一起，成為你餐桌上的藝術品，非常值的收藏。</p>
-                            </div>    
-                            <img class="s2_p1"src="./img/products/p1.svg" alt="">
-                            <img class="s2_p2"src="./img/products/p2.svg" alt="">
-                        </div>
-                        <div class="s2_tb2">                            
-                            <img class="s2_p3"src="./img/products/p3.svg" alt="">
-                            <img class="s2_p4"src="./img/products/p4.svg" alt="">
-                            <div class="tb2_p">
                                 <p>TY standard系列，是以400年前古時燒窯的器皿為意象，加上新時代的原料材質，開發一系列符合現代飲食生活的多樣化器皿。</p>
                                 <p>由創意總監柳原照弘設計師操刀，外型簡約但立體感十足的器皿，可隨創意發展出各種擺盤樣式。</p>
                                 <p>以不上釉般的原色美感，利用高密度陶土，烘托出有田燒最原始的素雅之美。</p>
@@ -158,6 +137,12 @@
                                     【材質】陶磁器。
                                 </p>
                             </div>
+                            <div class="s2_img">
+                                <img class="s2_p1"src="./img/products/p1.svg" alt="">
+                                <img class="s2_p2"src="./img/products/p2.svg" alt="">
+                                <img class="s2_p3"src="./img/products/p3.svg" alt="">
+                                <img class="s2_p4"src="./img/products/p4.svg" alt="">
+                            </div>    
                         </div>
                     </div>
                     <!-- 更多商品推薦區 -->
@@ -171,7 +156,7 @@
                                 <li>
                                     <a href="">
                                         <img src="./img/index/hot02.png" alt="">
-                                            <p>有田燒 結晶金卷清酒器組 ＋金山燒雲朵盤<br>
+                                            <p>有田燒 結晶金卷清酒器組<br>
                                             </p>
                                         </img>
                                     </a>
@@ -187,7 +172,7 @@
                                 <li>
                                     <a href="">
                                         <img src="./img/index/hot01.png" alt="">
-                                            <p>1616 arita japan 美型菊皿3入組<br>
+                                            <p>arita japan 美型菊皿3入組<br>
                                             
                                             </p>
                                         </img>
@@ -196,7 +181,7 @@
                                 <li>
                                     <a href="">
                                         <img src="./img/index/hot04.png" alt="">
-                                            <p>Cacomi 多功能碗(經典6入組)-賞美堂<br>
+                                            <p>多功能碗(經典6入組)-賞美堂<br>
                                             </p>
                                         </img>
                                     </a>
@@ -223,7 +208,7 @@
                                 </nav>    
                             </div>
                             <div class="footer_l2">
-                                <a href="index.html"><img src="./img/LOGO_F2_B.png" alt=""></a>
+                                <a href="index.html"><img src="./img/LOGO_F2_B.svg" alt=""></a>
                                 <p>本網站為緯育TibaMe前端設計工程師班第76期學員專題作品，本平台僅供學習、展示之用。參考資源:</p>
                                 <a href="https://www.tableandstyle.com/">東京食器、</a>
                                 <!-- <p>，</p> -->
@@ -253,6 +238,6 @@
                     </div>
                 </footer>        
     </div>
-    <!-- <script src="../javescript/index.js"></script> -->
+    <script src="./javescript/products.js"></script>
 </body>
 </html>
