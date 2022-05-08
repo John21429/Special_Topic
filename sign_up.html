@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sign_up</title>
     <link rel="stylesheet" href="./css/sign_up.css">
-    <!-- <link rel="stylesheet" href="./css/all_2.css"> -->
+    <link rel="stylesheet" href="./css/all.css">
     <script src="https://kit.fontawesome.com/fc393adae9.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <script src="./javescript/foreign/jquery-3.6.0.js"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -20,18 +21,18 @@
                 <!-- LOGO -->
                 <a href="index.html"><img class="logo" src="./img/LOGO_F2_B.svg" alt=""></a>
                 <!-- 總選單列 -->
-                <h1>會員註冊</h1>
+                
                 <nav><a href=""></a>
                     <ul>
                         <!-- 選單列 -->
                         <li class="all_list">
-                            <a href=""><i class="fa-solid fa-bars"></i></a>
+                            <i class="fa-solid fa-bars"></i>
                             <ul>
                                 <li><a href="about_us.html">關於我們</a></li>
                                 <li><a href="new.html">最新消息</a></li>
                                 <!-- 商品類別選單 -->
                                 <li class=" products">
-                                    <a href="">商品類別</a>
+                                    商品類別
                                     <ul>
                                         <li><a href="">日式餐具組</a></li>
                                         <li><a href="">禮盒組</a></li>
@@ -43,32 +44,29 @@
                                 </li>
                                 <!-- 擺盤風格選單 -->
                                 <li class="table_style">
-                                    <a href="">餐桌風格</a>
+                                    餐桌風格
                                     <ul>
-                                        <li><a href="">夏日小清新</a></li>
-                                        <li><a href="">初夏青白瓷</a></li>
-                                        <li><a href="/style_breakdown.html">波光綠竹</a></li>
-                                        <li><a href="">初春粉彩</a></li>
+                                        <li><a href="">夏之清新</a></li>
+                                        <li><a href="">冬之雪白</a></li>
+                                        <li><a href="style_breakdown.html">秋之綠竹</a></li>
+                                        <li><a href="">春之粉彩</a></li>
                                         <li><a href="">梅花之歌</a></li>
                                         <li><a href="">水墨懷石</a></li>
-                                        <li><a href="table_style.html">更多風格</a></li>
+                                        <li><a href="./table_style.html">更多風格</a></li>
                                     </ul>
                                 </li>
                             </ul>
                         </li>
                         <!-- 購物車列 -->
                         <li>
-                            <a href="pay.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                            <a href="./pay.html">
+                                <i id="shoppingcart_logo" class="fa-solid fa-cart-shopping"></i>
+                                <div class="shopping_nums">0</div>
+                            </a>
                         </li>
                         <!-- 會員列 -->
                         <li class="user">
                             <a href=""><i class="fa-solid fa-image-portrait"></i></a>
-                            <ul>
-                                <li><a href="sign_in.html">會員登入</a></li>
-                                <li><a href="sign_up.html">會員註冊</a></li>
-                                <li><a href="">訂單查詢</a></li>
-                                <li><a href="">購物說明</a></li>
-                            </ul>
                         </li>
                     </ul>
                 </nav>
@@ -77,14 +75,15 @@
         <!-- 頁首結束 -->
         <article>
             <section>
-                <div class="back_sign_in">
-                    <p>已是會員？</p>
-                    <a href="sign_in.html">請登入</a>
-                </div>
+                <h1>會員註冊</h1>
                 <div class="u_p">
                     <h3>帳號密碼</h3>
                     <div class="u_p_l">
                         <span></span>
+                        <div class="back_sign_in">
+                            <p>已是會員？</p>
+                            <a href="sign_in.html">請登入</a>
+                        </div>
                         <div class="username">
                             <p>帳號：</p> 
                             <input type="text" placeholder="6個以上的英文或數字" name="username" id="">
@@ -101,8 +100,8 @@
                 </div>
                 <div class="member_information">
                     <h3>會員資料</h3>
-                    <div class="m_i_l">
-                        <span></span>
+                    <span></span>
+                    <div class="m_i_l">                      
                         <div class="membername">
                             <p>姓名：</p> 
                             <input type="text" placeholder="您的本名" name="username" id="">
@@ -128,32 +127,20 @@
                                 <div class="form-group col">
                                     <div data-role="district" data-style="form-control" data-name="district" data-value=""></div>
                                 </div>
-                                <div class="form-group col">
-                                    <div data-role="zipcode" data-style="form-control" data-name="zipcode" data-value=""></div>
-                                </div>
+                            </div>
+                        </div>
+                            <div class="ads">
+                                <div style="width: 60px;"class="form-group col">
+                                    <div class="code" data-role="zipcode" data-style="form-control" data-name="zipcode" data-value=""></div>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" id="inputAddress2" placeholder="居住地址">
+                                    <input class="ad" type="text" class="form-control" id="inputAddress2" placeholder="居住地址">
                                 </div>
                             </div>
-                        </div>
-                        <input type="submit" value="送出">  
-                        <!-- <div id="twzipcode" class="form-row">
-                            <div class="form-group col">
-                                <div data-role="county" data-style="form-control" data-name="county" data-value=""></div>
-                            </div>
-                            <div class="form-group col">
-                                <div data-role="district" data-style="form-control" data-name="district" data-value=""></div>
-                            </div>
-                            <div class="form-group col">
-                                <div data-role="zipcode" data-style="form-control" data-name="zipcode" data-value=""></div>
-                            </div>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="inputAddress2" placeholder="居住地址">
-                            </div> -->
-                        </div>
-                    </div>
+                    </div>                        
+                    <div class="ips">
+                        <input type="submit" value="送出">    
+                    </div>  
                 </div>
             </section>
         </article>

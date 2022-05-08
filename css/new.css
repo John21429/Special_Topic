@@ -6,7 +6,7 @@
     overflow: hidden;
 }
 .banner1 img{
-    width: 100%;
+    min-width: 100%;
     position: relative;
     transition: all 2s;
 }

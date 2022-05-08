@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pay</title>
     <link rel="stylesheet" href="./css/pay.css">
-    <!-- <link rel="stylesheet" href="./css/all.css"> -->
+    <link rel="stylesheet" href="./css/all.css">
     <script src="https://kit.fontawesome.com/fc393adae9.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <script src="./javescript/foreign/jquery-3.6.0.js"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -20,18 +21,18 @@
                 <!-- LOGO -->
                 <a href="index.html"><img class="logo" src="./img/LOGO_F2_B.svg" alt=""></a>
                 <!-- 總選單列 -->
-                <h1>開始結帳</h1>
+                
                 <nav><a href=""></a>
                     <ul>
                         <!-- 選單列 -->
                         <li class="all_list">
-                            <a href=""><i class="fa-solid fa-bars"></i></a>
+                            <i class="fa-solid fa-bars"></i>
                             <ul>
                                 <li><a href="about_us.html">關於我們</a></li>
                                 <li><a href="new.html">最新消息</a></li>
                                 <!-- 商品類別選單 -->
                                 <li class=" products">
-                                    <a href="">商品類別</a>
+                                    商品類別
                                     <ul>
                                         <li><a href="">日式餐具組</a></li>
                                         <li><a href="">禮盒組</a></li>
@@ -43,22 +44,25 @@
                                 </li>
                                 <!-- 擺盤風格選單 -->
                                 <li class="table_style">
-                                    <a href="">餐桌風格</a>
+                                    餐桌風格
                                     <ul>
-                                        <li><a href="">夏日小清新</a></li>
-                                        <li><a href="">初夏青白瓷</a></li>
-                                        <li><a href=style_breakdown.html">波光綠竹</a></li>
-                                        <li><a href="">初春粉彩</a></li>
+                                        <li><a href="">夏之清新</a></li>
+                                        <li><a href="">冬之雪白</a></li>
+                                        <li><a href="style_breakdown.html">秋之綠竹</a></li>
+                                        <li><a href="">春之粉彩</a></li>
                                         <li><a href="">梅花之歌</a></li>
                                         <li><a href="">水墨懷石</a></li>
-                                        <li><a href="table_style.html">更多風格</a></li>
+                                        <li><a href="./table_style.html">更多風格</a></li>
                                     </ul>
                                 </li>
                             </ul>
                         </li>
                         <!-- 購物車列 -->
                         <li>
-                            <a href="pay.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                            <a href="./pay.html">
+                                <i id="shoppingcart_logo" class="fa-solid fa-cart-shopping"></i>
+                                <div class="shopping_nums"></div>
+                            </a>
                         </li>
                         <!-- 會員列 -->
                         <li class="user">
@@ -77,8 +81,8 @@
         <!-- 頁首結束 -->
         <article>
             <section>
+                <h1>購物車</h1>
                 <span></span>
-
                 <!-- 購物車明細開始 -->
                 <div class="shopping_cart">
                     <div class="shopping_list">
@@ -228,6 +232,7 @@
         <script src="https://cdn.jsdelivr.net/npm/jquery-twzipcode@1.7.14/jquery.twzipcode.min.js"></script>
         <script>$("#twzipcode").twzipcode({
         });</script>
+
         <script src="./javescript/pay.js"></script>
 </body>
 </html>

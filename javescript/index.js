@@ -75,16 +75,8 @@ for(let i = 0; i < imgCount; i++){
     $('#imgButton').append('<li></li>')//依照li數量加入按鈕數量
 }
     $('#imgButton li:nth-child(1)').addClass('clickMe')//--初始第一顆加上顏色
-
+    $(`#bgi01`).addClass('b1_at')
 let index =0;
-
-
-
-
-
-
-
-
 
 // let imgWidth = $('.banner1').width();
 // let ImgBlockWidth = $('banner1_bgi').width * imgCount
@@ -96,17 +88,20 @@ let index =0;
 setInterval(function changeImg(){
         index++
         index = index % imgCount
+
         $(`.banner1_bgi`).animate({
             opacity: 0,
-            
         })
+        $(`.banner1_bgi`).removeClass('b1_at')
         $(`#bgi0${index+1}`).animate({
             opacity: 1,
         })
+        $(`#bgi0${index+1}`).addClass('b1_at')
         if(index === 0){
             $(`#bgi05`).animate({
                 opacity: 0,
             })
+            $(`#bgi05`).removeClass('b1_at')
         }
         $(`#imgButton li:nth-child(${index +1 })`).addClass('clickMe')//按下哪個按鈕便加上顏色
         $('#imgButton li').not(`#imgButton li:nth-child(${index +1 })`).removeClass('clickMe')//其他按鈕去除加上的顏色
@@ -119,19 +114,21 @@ $('#imgButton li').click(function(){
     // console.log(index);
     $(`.banner1_bgi`).animate({
         opacity: 0,
-        
-    })
+    }).removeClass('b1_at');
+    
     $(`#bgi0${index+1}`).animate({
         opacity: 1,
-    })
+    }).addClass('b1_at')
     if(index === 0){
         $(`#bgi05`).animate({
             opacity: 0,
-        })
+        }).removeClass('b1_at')
     }
     $(this).addClass('clickMe')//按下哪個按鈕便加上顏色
     $('#imgButton li').not(this).removeClass('clickMe')//其他按鈕去除加上的顏色
 })
+
+
 
 // var banner1_bgi = document.getElementsByClassName('banner1_bgi')
 
@@ -217,19 +214,22 @@ $('#imgButton li').click(function(){
 var b4_tb = document.getElementsByClassName("b4_tb")[0];//設定高度
 
 document.addEventListener('scroll', function() {
-    if(window.scrollY >= (b4_tb.offsetTop-200)){
+    if(window.scrollY >= (b4_tb.offsetTop-400)){
         // console.log(b4_tb.offsetTop-200);
         //要做的事情放這邊
     document.getElementsByClassName("b4tb_h2")[0].classList.add("b4h2_at");
+    $('.b4_tb_p').addClass()
     }           
 });
 
 var banner2 = document.getElementsByClassName("banner2")[0];//設定高度
 
-document.addEventListener('scroll', function() {
-    if(window.scrollY >= (banner2.offsetTop/2)){
-    document.getElementsByClassName("banner2_tb")[0].classList.add('-animation');
-    }           
+document.addEventListener('scroll', function(){
+    if(window.scrollY > 500){
+        // let animation = $('.-animation')
+        // console.log(window.scrollY);
+        $('.banner2_tb').addClass('b2_at');
+    }                  
 });
 
 // var click_a = document.getElementsByClassName("more_ts1")[0];

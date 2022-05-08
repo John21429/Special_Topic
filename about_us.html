@@ -32,13 +32,13 @@
                         <ul>
                             <!-- 選單列 -->
                             <li class="all_list">
-                                <a href=""><i class="fa-solid fa-bars"></i></a>
+                                <i class="fa-solid fa-bars"></i>
                                 <ul>
                                     <li><a href="./about_us.html">關於我們</a></li>
                                     <li><a href="./new.html">最新消息</a></li>
                                     <!-- 商品類別選單 -->
                                     <li class=" products">
-                                        <a href="">商品類別</a>
+                                        商品類別
                                         <ul>
                                             <li><a href="">日式餐具組</a></li>
                                             <li><a href="">禮盒組</a></li>
@@ -50,7 +50,7 @@
                                     </li>
                                     <!-- 擺盤風格選單 -->
                                     <li class="table_style">
-                                        <a href="./table_style.html">餐桌風格</a>
+                                        餐桌風格
                                          <ul>
                                             <li><a href="">夏之清新</a></li>
                                             <li><a href="">冬之雪白</a></li>
@@ -78,26 +78,9 @@
                     </nav>
                 </div>
                 <div class="banner1">
-                    <!-- <iframe src="https://assets.pinterest.com/ext/embed.html?id=5840674507325047" height="900" width="450" frameborder="0" scrolling="no" ></iframe> -->
-                    <img id="bgi01" src="./img/bgi/about_us_bgi/banner1_bgi.png" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-
+                    <video class="aboutUsVideo" src="./video/aboutus.mp4" autoplay muted></video>
                 </div>
-                    <!-- <a class="lefticon" href="">
-                        <i class="fa-solid fa-angle-left"></i>
-                    </a>
-                    <a class="righticon" href="">
-                        <i class="fa-solid fa-angle-right"></i>
-                    </a> -->
-                </div>
-                </header>
-            <!-- <a class="lefticon" href="">
-                <i class="fa-solid fa-angle-left"></i>
-            </a>
-            <a class="rigthicon" href="">
-                <i class="fa-solid fa-angle-right"></i>
-            </a> -->
+            </header>
             <!-- 頁首結束 -->
 
             <!-- 內文開始 -->
@@ -107,6 +90,7 @@
                         <img src="./img/about_us/b201.png" alt="">
                         <div class="about_us_text">
                             <img src="./img/LOGO_F2_B.svg" alt="">
+                            <video style="opacity: .3;" src="./video/b2Text_video01.mp4" autoplay muted></video>
                             <p>創立於2022年，<br>
                                 嚴格篩選來自日本各知名品牌，<br>
                                 陶瓷、玻璃器皿。<br>
@@ -185,7 +169,11 @@
         </div>
     </div>
     <script>
-
+        $(function(){
+            if(window.innerWidth < 576){
+                $('.aboutUsVideo').attr('src',"./video/aboutus_m.mp4")
+            }
+        })
 
         document.addEventListener('scroll', function() {
             let banner2 = document.getElementsByClassName("banner2")[0];

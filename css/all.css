@@ -11,7 +11,9 @@ body{
     position: fixed;
     z-index: 1;
 }
-
+.all_list{
+    padding-left: 20px;
+}
 .fa-solid{
     color: rgb(255, 255, 255);
     font-size: 30px;
@@ -54,18 +56,6 @@ body{
 
     }
 }
-.s_a{
-    animation: s_a .3s
-    
-}
-@keyframes s_a{
-    0%{
-        transform: scale3d(1.5,1.5,1.5);
-    }
-    100%{
-        transform: scale3d(1,1,1);
-    }
-}
 /* ------RWD----- */
 @media screen and (max-width: 576px){
     img.logo{
@@ -77,7 +67,7 @@ body{
         width: 30px;
     }
     div.header ul {
-        padding: 10px;
+        padding: 20px;
         z-index: 1;
     }
     div.header ul li ul{
@@ -159,23 +149,8 @@ body{
 .banner1{
     position: relative;
 }
-.lefticon{
 
-
-}
-.righticon{
-
-}
-.lefticon:hover{
-    transition: all .5s;
-    transform: scale3d(1.1,1.1,1.1)
-}
-.righticon:hover{
-    transition: all .5s;
-    transform: scale3d(1.1,1.1,1.1)
-}
 /* header_end */
-
 
 h3{
     font-size: 2em;

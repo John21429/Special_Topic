@@ -8,18 +8,13 @@ body{
     /* opacity: 50%; */
 }
 
-
 .banner1{
-    /* border: 1px solid red; */
-    /* background-image: url(../img/bgi/about_us_bgi/banner1_bgi.jpg); */
     width: 100%;
-    /* height: 700px; */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 0 auto;
+    
+    /* border: 1px solid red; */
+    /* margin-bottom: 200px; */
 }
-.banner1 img{
+.banner1 video{
     width: 100%;
 }
 
@@ -31,62 +26,63 @@ body{
     height: auto;
     margin: 20px auto;
     justify-content: center;
+    
 }
 .about_us_text img{
     /* width: 600px; */
     /* height: 150px; */
-    position: relative;
     /* overflow:visible; */
-    top:-75px;
+    position: absolute;
+    top:0px;
     /* border: 1px solid red; */
 }
 .about_us_text{ 
     /* border: 1px solid red; */
     width: 600px;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-image: url(../img/bgi/about_us_bgi/b2t_bgi.png);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
     /* padding-bottom: 50px; */
-    /* position: relative; */
+    position: relative;
     /* overflow:visible; */
+}
+.about_us_text video{
+    width: 1600px;
+    height: 600px;
+    z-index: -1;
+    position:absolute;
+    left: -400px;
 }
 .about_us_text p{
     /* border: 1px solid red; */
     writing-mode: vertical-lr;
     line-height: 3em;
     font-size: 26px;
-    position: relative;
-    top:-50px;
+    position: absolute;
+    top:150px;
 }
 
 @media screen and (max-width: 576px){
     .banner1{
-        
         height: auto;
     }
     .banner2{
         width: 100%;
     }
-    .banner2 img{
-        display:none;
+    .banner2>img{
+        display: none;
     }
     .about_us_text img{
-        display: none;
-        position: none;
     }
     .about_us_text{
         width: 100%;
-        height: 100%;
-        background-image: url('');
+        height: 380px;
     }
     .about_us_text p{
         font-size: 18px;
-        top:0;
-        position: none;
+        top:120px
     }
 }
 @media screen and (min-width: 575px)and (max-width: 991.98px){
@@ -177,7 +173,7 @@ body{
     font-size: 18px;
     line-height: 2.5em;
 }
-iframe{
+.banner4 iframe{
     width: 800px;
     height: 400px;
 }
@@ -210,7 +206,7 @@ iframe{
         font-size: 8px;
         display: none;
     }
-    iframe{
+    .banner4 iframe{
         width: 100%;
         height: 400px;
         margin-bottom: 20px;
@@ -232,6 +228,11 @@ iframe{
     }
     .banner4 h3{
         writing-mode: horizontal-tb;
+    }
+    .banner4 iframe{
+        width: 100%;
+        height: 400px;
+        margin-bottom: 20px;
     }
 }
 

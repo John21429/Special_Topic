@@ -1,5 +1,16 @@
 
 
+$(function(){
+    let shoppcart = JSON.parse(localStorage.getItem('pay_list')) //--取localStorage的數據
+    //--宣告好變數
+    let p_nums = shoppcart['p_nums'];
+    let shopping_nums = document.getElementsByClassName("shopping_nums")[0];
+    shopping_nums.innerHTML = parseInt(shopping_nums.textContent) + parseInt(p_nums);
+    console.log(shopping_nums.textContent);
+    shopping_nums.style.display = "block";
+})
+
+
 const p_style1 = document.getElementsByClassName('p_style1')[0];
 p_style1.addEventListener("click",function(){
     document.getElementsByClassName('products_photo')[0].style.backgroundImage='url(./img/products/p1.svg)';
@@ -52,6 +63,7 @@ const p_price = 3999;//--價格(其實要抓html裡的數字，但我懶)
 let go_to_pay = document.getElementById("go_to_pay");//--加入購物車
 let go_to_pay_now = document.getElementById("go_to_pay_now")//--立即結帳
 let pay_list = {};//--準備打包放入localStorage的資料夾
+
 
 
 function GTP(e){
@@ -113,3 +125,15 @@ go_to_pay_now.addEventListener("click",function(e){
     location.assign("../pay.html");
 });
 
+// $(function(){
+//     $('.all_list').click(function(){
+//         $('.header ul li>ul').css({
+//             display: block,
+//         })
+//     })
+//     $('.header ul li ul').click(function(){
+//         $('.header ul li ul li').css({
+//             display: block,
+//         })
+//     })
+// })

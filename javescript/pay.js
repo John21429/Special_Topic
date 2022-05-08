@@ -1,6 +1,5 @@
 
 
-
 let shoppcart = JSON.parse(localStorage.getItem('pay_list')) //--取localStorage的數據
 
 //--宣告好變數
@@ -12,6 +11,9 @@ let p_nums = shoppcart['p_nums'];
 //--確認內容是否正確
 console.log(shoppcart);
 
+
+$('.shopping_nums').css('display','block');
+$('.shopping_nums').html(`${p_nums}`);
 //--排好放進對應的位子
 let inhtml =`
 <ul>
@@ -33,7 +35,7 @@ delete_bt.addEventListener("click",function(){
     iteminfo.innerHTML= '';
     p_totle.innerHTML = '';
     localStorage.removeItem("pay_list");
-
+    $('.shopping_nums').html('');
+    $('.shopping_nums').css('display','none');
 })
-
 

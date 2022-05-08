@@ -27,7 +27,17 @@
     left: 0;
     opacity: 0;
 }
-
+.b1_at{
+    animation: b1_at 4s;
+}
+@keyframes b1_at{
+    0%{
+        transform: scale3d(1.1,1.1,1.1);
+    }
+    100%{
+        transform: scale3d(1,1,1);
+    }
+}
 #imgButton{
 	/* border: 1px solid red; */
 	text-align: center;
@@ -138,7 +148,7 @@
 }
 .banner2_tb{
     background-image: url(../img/bgi/index_bgi/index_bgi01\ 1.svg);
-    animation: b2tb_at 5s;
+    /* animation: b2tb_at 5s; */
 }
 @media screen and (max-width: 576px){
     div.banner2{
@@ -199,9 +209,8 @@
         top:0px;
     }
   }
-.banner2_tb.-animation{
+.b2_at{
     animation: b2tb_at 5s;
-    
 }
 @keyframes b2tb_at{
     0%{
@@ -550,7 +559,9 @@
 .b4h2_at{
     animation: b4h2_at 2s;
 }
-
+.b4_tb_p{
+    animation: b4_tb_p 2s;
+}
 @keyframes b4h2_at{ 
     0%{
         opacity: 0%;
