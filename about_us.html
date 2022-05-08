@@ -12,13 +12,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
     <script src="./javescript/foreign/jquery-3.6.0.js"></script>
-    <script>
-        $(function(){
-            if(window.innerWidth < 576){
-               $("#bgi01").attr('src','../img/bgi/about_us_bgi/banner1_Mbgi.png') 
-            }    
-        })
-    </script>
 </head>
 <body>
     <div class="wrapper">
@@ -72,13 +65,13 @@
                             </li>
                             <!-- 會員列 -->
                             <li class="user">
-                                <a href=""><i class="fa-solid fa-image-portrait"></i></a>
+                                <a href="./sign_in.html"><i class="fa-solid fa-image-portrait"></i></a>
                             </li>
                         </ul>
                     </nav>
                 </div>
                 <div class="banner1">
-                    <video class="aboutUsVideo" src="./video/aboutus.mp4" autoplay muted></video>
+                    <video class="aboutUsVideo" src="./video/aboutus.mp4"  autoplay muted loop></video>
                 </div>
             </header>
             <!-- 頁首結束 -->
@@ -86,11 +79,12 @@
             <!-- 內文開始 -->
             <article>
                 <section>
+
                     <div class="banner2">
-                        <img src="./img/about_us/b201.png" alt="">
+                        <img class="b3_video" src="./img/about_us/b201.png" alt="">
                         <div class="about_us_text">
                             <img src="./img/LOGO_F2_B.svg" alt="">
-                            <video style="opacity: .3;" src="./video/b2Text_video01.mp4" autoplay muted></video>
+                            <video style="opacity: .1;" src="./video/b2Text_video01.mp4" autoplay muted loop></video>
                             <p>創立於2022年，<br>
                                 嚴格篩選來自日本各知名品牌，<br>
                                 陶瓷、玻璃器皿。<br>
@@ -100,6 +94,7 @@
                         </div>
                     </div>
                     <div class="banner3">
+                        
                         <div class="b3_block1">
                             <h1>選用日本職人手做，堅持給您最好的!</h1>
                             <img src="./img/about_us/ab_img03.png" alt=""> 

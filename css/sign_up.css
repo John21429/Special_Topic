@@ -9,10 +9,19 @@ input{
     border-bottom: 1px solid gray;
     /* height: 30px;
     line-height: 1.6; */
+    background-color: none;
 }
 .wrapper{
     width: 100%;
     margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+.wrapper>video{
+    position: absolute;
+    z-index: -1;
+    opacity: .1;
+    width: 100%;
 }
 header{
     height: 100px;
