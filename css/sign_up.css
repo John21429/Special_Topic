@@ -92,6 +92,9 @@ section>h1{
     .confirm_password{
         width: auto;
     }
+    .wrapper>video{
+        display: none;
+    }
 }
 .member_information{
     display: flex;
