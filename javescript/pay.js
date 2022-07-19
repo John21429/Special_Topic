@@ -1,4 +1,29 @@
 
+// 漢堡
+let listIcon = document.getElementsByClassName("listIcon")[0];
+let closeIcon = document.getElementsByClassName("closeIcon")[0];
+let navAllList = document.getElementsByClassName("navAllList")[0];
+listIcon.addEventListener('click',function(){
+    let navList = document.getElementsByClassName("navList")[0];
+    if(window.innerWidth < 576){
+        navAllList.style.height = "220px";
+    }else{
+        navAllList.style.height = "150px";
+    }
+    navList.style.display = "block";
+    navList.style.display = "flex";
+    let closeIcon = document.getElementsByClassName("closeIcon")[0];
+    listIcon.style.display = "none";
+    closeIcon.style.display = "block";
+})
+closeIcon.addEventListener('click',function(){
+    let navList = document.getElementsByClassName("navList")[0];
+    navAllList.style.height = "0px";
+    navList.style.display = "none";
+    let closeIcon = document.getElementsByClassName("closeIcon")[0];
+    listIcon.style.display = "block";
+    closeIcon.style.display = "none";
+})
 
 let shoppcart = JSON.parse(localStorage.getItem('pay_list')) //--取localStorage的數據
 

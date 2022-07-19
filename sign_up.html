@@ -20,42 +20,14 @@
         <header>
             <div class="header">
                 <!-- LOGO -->
-                <a href="index.html"><img class="logo" src="./img/LOGO_F2_B.svg" alt=""></a>
+                <a href="index.html"><img class="logo" src="./javescript/LOGO_F2W_1.png" alt=""></a>
                 <!-- 總選單列 -->
-                <nav><a href=""></a>
-                    <ul>
+                <nav>
+                    <ul class="all_list">
                         <!-- 選單列 -->
-                        <li class="all_list">
-                            <i class="fa-solid fa-bars"></i>
-                            <ul>
-                                <li><a href="about_us.html">關於我們</a></li>
-                                <li><a href="new.html">最新消息</a></li>
-                                <!-- 商品類別選單 -->
-                                <li class=" products">
-                                    商品類別
-                                    <ul>
-                                        <li><a href="">日式餐具組</a></li>
-                                        <li><a href="">禮盒組</a></li>
-                                        <li><a href="products.html">盤子</a></li>
-                                        <li><a href="">碗</a></li>
-                                        <li><a href="">杯子</a></li>
-                                        <li><a href="">其他配件</a></li>
-                                    </ul>
-                                </li>
-                                <!-- 擺盤風格選單 -->
-                                <li class="table_style">
-                                    餐桌風格
-                                    <ul>
-                                        <li><a href="">夏之清新</a></li>
-                                        <li><a href="">冬之雪白</a></li>
-                                        <li><a href="style_breakdown.html">秋之綠竹</a></li>
-                                        <li><a href="">春之粉彩</a></li>
-                                        <li><a href="">梅花之歌</a></li>
-                                        <li><a href="">水墨懷石</a></li>
-                                        <li><a href="./table_style.html">更多風格</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
+                        <li>
+                            <i class="fa-solid fa-bars listIcon"></i>
+                            <i class="fa-solid fa-xmark closeIcon"></i>
                         </li>
                         <!-- 購物車列 -->
                         <li>
@@ -66,10 +38,42 @@
                         </li>
                         <!-- 會員列 -->
                         <li class="user">
-                            <a href="./sign_in.html"><i class="fa-solid fa-image-portrait"></i></a>
+                            <a href="sign_in.html"><i class="fa-solid fa-image-portrait"></i></a>
                         </li>
                     </ul>
                 </nav>
+                <!-- 漢堡彈窗 -->
+                <div class="navAllList">
+                    <ul class="navList">
+                        <li><a href="about_us.html">關於我們</a></li>
+                        <li><a href="./new.html">最新消息</a></li>
+                        <!-- 商品類別選單 -->
+                        <li >
+                            商品類別
+                            <ul class=" products">
+                                <li><a href="">餐具組合</a></li>
+                                <!-- <li><a href="">禮盒組</a></li> -->
+                                <li><a href="products.html">盤子</a></li>
+                                <li><a href="">碗</a></li>
+                                <li><a href="">杯子</a></li>
+                                <!-- <li><a href="">其他配件</a></li> -->
+                            </ul>
+                        </li>
+                        <!-- 擺盤風格選單 -->
+                        <li >
+                            餐桌風格
+                            <ul class="table_style">
+                                <li><a href="">夏之清新</a></li>
+                                <li><a href="">冬之雪白</a></li>
+                                <li><a href="style_breakdown.html">秋之綠竹</a></li>
+                                <li><a href="">春之粉彩</a></li>
+                                <!-- <li><a href="">梅花之歌</a></li>
+                                <li><a href="">水墨懷石</a></li> -->
+                                <li><a href="./table_style.html">更多風格</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </header>
         <!-- 頁首結束 -->
@@ -193,6 +197,32 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-twzipcode@1.7.14/jquery.twzipcode.min.js"></script>
     <script>$("#twzipcode").twzipcode({
-    });</script>
+    });
+            // 漢堡
+            let listIcon = document.getElementsByClassName("listIcon")[0];
+        let closeIcon = document.getElementsByClassName("closeIcon")[0];
+        let navAllList = document.getElementsByClassName("navAllList")[0];
+        listIcon.addEventListener('click',function(){
+            let navList = document.getElementsByClassName("navList")[0];
+            if(window.innerWidth < 576){
+                navAllList.style.height = "220px";
+            }else{
+                navAllList.style.height = "150px";
+            }
+            navList.style.display = "block";
+            navList.style.display = "flex";
+            let closeIcon = document.getElementsByClassName("closeIcon")[0];
+            listIcon.style.display = "none";
+            closeIcon.style.display = "block";
+        })
+        closeIcon.addEventListener('click',function(){
+            let navList = document.getElementsByClassName("navList")[0];
+            navAllList.style.height = "0px";
+            navList.style.display = "none";
+            let closeIcon = document.getElementsByClassName("closeIcon")[0];
+            listIcon.style.display = "block";
+            closeIcon.style.display = "none";
+        })
+    </script>
 </body>
 </html>

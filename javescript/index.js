@@ -31,6 +31,31 @@ $(window).resize(function(){
     }
 })
     
+// 漢堡
+let listIcon = document.getElementsByClassName("listIcon")[0];
+let closeIcon = document.getElementsByClassName("closeIcon")[0];
+let navAllList = document.getElementsByClassName("navAllList")[0];
+listIcon.addEventListener('click',function(){
+    let navList = document.getElementsByClassName("navList")[0];
+    if(window.innerWidth < 576){
+        navAllList.style.height = "220px";
+    }else{
+        navAllList.style.height = "150px";
+    }
+    navList.style.display = "block";
+    navList.style.display = "flex";
+    let closeIcon = document.getElementsByClassName("closeIcon")[0];
+    listIcon.style.display = "none";
+    closeIcon.style.display = "block";
+})
+closeIcon.addEventListener('click',function(){
+    let navList = document.getElementsByClassName("navList")[0];
+    navAllList.style.height = "0px";
+    navList.style.display = "none";
+    let closeIcon = document.getElementsByClassName("closeIcon")[0];
+    listIcon.style.display = "block";
+    closeIcon.style.display = "none";
+})
 
 ///-----------------logo跟icon於banner2起換成黑色--------------------------
 document.addEventListener('scroll', function() {
@@ -43,6 +68,8 @@ document.addEventListener('scroll', function() {
             // console.log(icon[i]);
             icon[i].style.color = "black";
         }
+        navAllList.style.color = "black";
+        $('.navAllList a').css('color','black');
     }else{
         document.getElementsByClassName("logo")[0].src ="./LOGO_F2W_1.png";
         var icon =document.getElementsByClassName("fa-solid");
@@ -50,6 +77,8 @@ document.addEventListener('scroll', function() {
             // console.log(icon[i]);
             icon[i].style.color = "white";
         }
+        navAllList.style.color = "white";
+        $('.navAllList a').css('color','white');
     }        
 });
 
